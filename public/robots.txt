@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fiorillijrfarmacia.com.ar/sitemap.xml
