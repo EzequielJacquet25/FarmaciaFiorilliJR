@@ -23,7 +23,7 @@ const Footer = () => {
     <footer className="footer d-flex flex-column justify-content-between">
       <div className="mapa-container">
         <p className="encontranos">
-          Encontranos en la siguiente dirección{" "}
+          Encontranos en la siguiente dirección
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -56,7 +56,7 @@ const Footer = () => {
             />
           </div>
           <div>
-            <h3>Dirección técnica</h3>
+            <h3>Dirección Técnica</h3>
             <div className="mb-3">
               <p className="h6">-Directora Técnica :</p>
               <small>Monica Beatriz Fiorilli </small>
