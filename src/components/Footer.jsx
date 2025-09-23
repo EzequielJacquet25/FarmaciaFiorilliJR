@@ -58,14 +58,14 @@ const Footer = () => {
           <div>
             <h3>Dirección Técnica</h3>
             <div className="mb-3">
-              <p className="h6"> Directora Técnica :</p>
+              <p className="h6">-Directora Técnica :</p>
               <small>Monica Beatriz Fiorilli </small>
             </div>
             <div className="mb-3">
-              <p className="h6">Gerente :</p>
+              <p className="h6">-Gerente :</p>
               <small>Raúl Alejandro Jacquet</small>
             </div>
-            <h4>Razón Social </h4>
+            <h4>-Razón Social </h4>
             <small>Farmacia FIORILLI JR </small>
           </div>
         </div>
