@@ -65,7 +65,7 @@ const Footer = () => {
               <p className="h6">-Gerente :</p>
               <small>Raúl Alejandro Jacquet</small>
             </div>
-            <h4>Razón Social </h4>
+            <h4>Razón Social</h4>
             <small>Farmacia FIORILLI JR</small>
           </div>
         </div>
