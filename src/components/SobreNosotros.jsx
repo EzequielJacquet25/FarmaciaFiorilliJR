@@ -62,8 +62,9 @@ const SobreNosotros = () => {
                   </p>
                   <p>
                     Ofrecemos atención personalizada, asesoramiento profesional
-                    y servicios como toma de presión arterial, control de
-                    glucosa y cobertura de obras sociales.
+                    y servicios como toma de presión arterial, Brindamos
+                    asesoramiento sobre como realizar el control de glucosa y
+                    cobertura de obras sociales.
                   </p>
                   <p>
                     Nuestro equipo está en constante capacitación y trabajamos
