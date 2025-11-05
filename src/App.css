@@ -59,21 +59,22 @@ body {
 }
 
 .imagenCarrousel {
-  height: 90vh;
-  width: 100%;
+  aspect-ratio: 16/9;
+  width: 70%;
+  height: 70dvh;
+  margin: auto;
 }
 
 .carruselMargin {
-  margin-top: 17vh;
+  margin-top: 155px;
 }
 .imagenCarrouselr {
-    width: 100%;
-    height: 90vh;
+  aspect-ratio: 20/9;
+  margin-top: 28px;
+  width: 100%;
+  height: 30dvh;
+  max-height: 30dvh;
   }
-.imagenHeigth{
-  margin-top: 5vh;
-  height: 50vh;
-}
 .secctionMargin{
   margin-top: 20vh;
 }
@@ -279,6 +280,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px;
 }
 
+.video{
+ height: "100%";
+ max-width: 350px;
+ max-height: "1920px";
+}
 
 /* ===============================
    INFO Y FOOTER
@@ -289,6 +295,30 @@ background-color: var(--colorTexto);
   animation: expandirAltura 0.5s ease forwards;
   animation-delay: 2s; 
 
+}
+.nav-justified .nav-item, .nav-justified>.nav-link {
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: center;
+    margin: 5px;
+
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #00b169;
+    background-color: #f0781d;
+    border-color: none;
+}
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-color: black; 
+    --bs-nav-link-hover-color: black; 
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 @keyframes expandirAltura {
@@ -355,9 +385,6 @@ background-color: var(--colorTexto);
   .carruselMargin {
     margin-top: 25vh;
   }
-  .secctionMargin{
-  margin-top: 30vh;
-}
 }
 @media screen and (max-width: 1200px) {
   .carruselMargin{
@@ -384,7 +411,7 @@ background-color: var(--colorTexto);
 }
 @media screen and (max-width: 500px) {
 .carruselMargin{
-    margin-top: 15vh;
+    margin-top: 100px;
   }
   .colorLogo {
     display: none;
@@ -393,5 +420,6 @@ background-color: var(--colorTexto);
     animation: none;
   }
 }
+
 
 

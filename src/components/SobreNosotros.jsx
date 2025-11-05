@@ -3,6 +3,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Container from "react-bootstrap/Container";
 import logo from "../assets/logoFarmaciaFiorilliJR.png";
 import { useEffect, useState } from "react";
+import Videos from "./Videos";
 const SobreNosotros = () => {
   const [ventana, setVentana] = useState(window.innerWidth);
   useEffect(() => {
@@ -49,8 +50,9 @@ const SobreNosotros = () => {
             <div>
               <h1>Quienes somos?</h1>
             </div>
-            <div>
-              <div className="d-flex flex-column flex-md-row justifi-content-center align-items-center">
+            <div className="d-flex flex-column   flex-md-row justify-content-center align-items-center gap-4 ">
+              <Videos video={"quienes-somos.mp4"} />
+              <div className=" d-flex flex-column justify-content-center align-items-center">
                 <div>
                   <p>
                     Somos una <b>empresa familiar</b> ubicada en la calle
@@ -78,11 +80,6 @@ const SobreNosotros = () => {
                     evolución, al servicio de nuestra comunidad.
                   </p>
                 </div>
-                <img
-                  src={logo}
-                  alt="Logo"
-                  className="aparece-desde-izquierda"
-                />
               </div>
             </div>
           </Tab>
@@ -90,7 +87,8 @@ const SobreNosotros = () => {
             <div>
               <h1>Filosofia</h1>
             </div>
-            <div>
+            <div className="d-flex flex-column  flex-md-row justify-content-center align-items-center gap-4">
+              <Videos video={"filosofia.mp4"} />
               <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
                 <div>
                   <p>
@@ -106,20 +104,22 @@ const SobreNosotros = () => {
                   </p>
                   <ul>
                     <li style={{ listStyle: "none" }}>
-                      ✔️ La <b>calidad</b> en cada uno de nuestros productos y
-                      servicios brindados .
+                      <span>✅</span> La <b>calidad</b> en cada uno de nuestros
+                      productos y servicios brindados .
                     </li>
                     <li style={{ listStyle: "none" }}>
-                      ✔️ El <b>compromiso con la salud pública</b> y el
-                      bienestar de nuestros pacientes.
+                      <span>✅</span> El <b>compromiso con la salud pública</b>{" "}
+                      y el bienestar de nuestros pacientes.
                     </li>
                     <li style={{ listStyle: "none" }}>
-                      ✔️ La <b>honestidad, el respeto y la amabilidad</b> en el
-                      trato diario con quienes nos eligen.
+                      <span>✅</span> La{" "}
+                      <b>honestidad, el respeto y la amabilidad</b> en el trato
+                      diario con quienes nos eligen.
                     </li>
                     <li style={{ listStyle: "none" }}>
-                      ✔️ La <b>vocación de servicio</b>, ayudando siempre de la
-                      mejor forma posible, con cercanía y responsabilidad.
+                      <span>✅</span> La <b>vocación de servicio</b>, ayudando
+                      siempre de la mejor forma posible, con cercanía y
+                      responsabilidad.
                     </li>
                   </ul>
                   <p>
@@ -147,11 +147,51 @@ const SobreNosotros = () => {
                     precios económicos.
                   </p>
                 </div>
-                <img
-                  src={logo}
-                  alt="Logo"
-                  className="aparece-desde-izquierda"
-                />
+              </div>
+            </div>
+          </Tab>
+          <Tab eventKey="Compromiso" title="Compromiso">
+            <div>
+              <h1>Compromiso</h1>
+            </div>
+            <div className="d-flex  flex-column flex-md-row justify-content-center align-items-center gap-4 ">
+              <Videos video={"compromiso.mp4"} />
+              <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
+                <div>
+                  <p>
+                    En <em>Farmacia JR Fiorilli</em> estamos comprometidos en
+                    acompañar a nuestros pacientes a lo largo de sus
+                    tratamientos, proporcionando productos seguros y de alta
+                    calidad. Este compromiso se sostiene en una atención
+                    personalizada, un equipo de profesionales bien capacitados y
+                    procesos de elaboración que garantizan la máxima seguridad ,
+                    calidad y confiabilidad .
+                  </p>
+                  <p>
+                    Como una institución enfocada en el crecimiento y la mejora
+                    continua de los servicios y productos prestados al público .
+                    Constantemente estamos incorporando nuevas tecnologías ,
+                    técnicas , servicios , para fortalecer nuestras capacidades
+                    y seguir ofreciendo la mejor atención posible a quienes
+                    depositan su confianza en nosotros. Nuestra visión es
+                    consolidarnos como una farmacia moderna, accesible y cercana
+                    al público en general , preparada para afrontar los desafíos
+                    futuros con responsabilidad e innovación.
+                  </p>
+                  <p>
+                    Nuestros planeas a futuros están centrados en seguir
+                    creciendo como institución fortalecer nuestro rol como
+                    centro de atención de salud y desarrollar nuevas
+                    herramientas que permitan brindar un mejor servicio
+                    integral.
+                  </p>
+                  <p>
+                    Más allá de la dispensa de medicamentos, aspiramos a ser un
+                    ejemplo a seguir en lo que se refiere a cuidados de la
+                    salud, guiados por la excelencia, la ética profesional y el
+                    compromiso genuino con nuestros pacientes.
+                  </p>
+                </div>
               </div>
             </div>
           </Tab>
@@ -159,7 +199,7 @@ const SobreNosotros = () => {
             <div>
               <h1>Trayectoria</h1>
             </div>
-            <div>
+            <div className="d-flex flex-column-reverse  flex-md-row justify-content-center align-items-center gap-4 ">
               <div className="d-flex flex-column flex-md-row justify-content-center align-items-center">
                 <div>
                   <p>
@@ -226,60 +266,12 @@ const SobreNosotros = () => {
               </div>
             </div>
           </Tab>
-          <Tab eventKey="Compromiso" title="Compromiso">
-            <div>
-              <h1>Compromiso</h1>
-            </div>
-            <div>
-              <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
-                <div>
-                  <p>
-                    En <em>Farmacia JR Fiorilli</em> estamos comprometidos en
-                    acompañar a nuestros pacientes a lo largo de sus
-                    tratamientos, proporcionando productos seguros y de alta
-                    calidad. Este compromiso se sostiene en una atención
-                    personalizada, un equipo de profesionales bien capacitados y
-                    procesos de elaboración que garantizan la máxima seguridad ,
-                    calidad y confiabilidad .
-                  </p>
-                  <p>
-                    Como una institución enfocada en el crecimiento y la mejora
-                    continua de los servicios y productos prestados al público .
-                    Constantemente estamos incorporando nuevas tecnologías ,
-                    técnicas , servicios , para fortalecer nuestras capacidades
-                    y seguir ofreciendo la mejor atención posible a quienes
-                    depositan su confianza en nosotros. Nuestra visión es
-                    consolidarnos como una farmacia moderna, accesible y cercana
-                    al público en general , preparada para afrontar los desafíos
-                    futuros con responsabilidad e innovación.
-                  </p>
-                  <p>
-                    Nuestros planeas a futuros están centrados en seguir
-                    creciendo como institución fortalecer nuestro rol como
-                    centro de atención de salud y desarrollar nuevas
-                    herramientas que permitan brindar un mejor servicio
-                    integral.
-                  </p>
-                  <p>
-                    Más allá de la dispensa de medicamentos, aspiramos a ser un
-                    ejemplo a seguir en lo que se refiere a cuidados de la
-                    salud, guiados por la excelencia, la ética profesional y el
-                    compromiso genuino con nuestros pacientes.
-                  </p>
-                </div>
-                <img
-                  src={logo}
-                  alt="Logo"
-                  className="aparece-desde-izquierda"
-                />
-              </div>
-            </div>
-          </Tab>
+
           <Tab eventKey="Objetivos" title="Nuestros Objetivos">
             <div>
               <h1>Nuestros Objetivos</h1>
             </div>
-            <div>
+            <div className="d-flex flex-column-reverse  flex-md-row justify-content-center align-items-center gap-4 ">
               <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
                 <div>
                   <p>
