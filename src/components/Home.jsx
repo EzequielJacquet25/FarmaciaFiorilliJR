@@ -34,7 +34,7 @@ const Home = ({ productos }) => {
                 ? "d-block imagenCarrouselr"
                 : "d-block imagenCarrousel"
             }
-            src={ventana < 500 ? banner1 : banner1r}
+            src={ventana < 500 ? banner1r : banner1r}
             alt="Banner de promoción 1 - Fiorilli JR"
           />
         </Carousel.Item>
@@ -45,7 +45,7 @@ const Home = ({ productos }) => {
                 ? "d-block imagenCarrouselr"
                 : "d-block imagenCarrousel"
             }
-            src={ventana < 500 ? banner2 : banner2r}
+            src={ventana < 500 ? banner2r : banner2r}
             alt="Banner de promoción 2 - Fiorilli JR"
           />
         </Carousel.Item>
@@ -56,7 +56,7 @@ const Home = ({ productos }) => {
                 ? "d-block imagenCarrouselr imagenHeigth"
                 : "d-block imagenCarrousel"
             }
-            src={ventana < 500 ? banner3 : banner3r}
+            src={ventana < 500 ? banner3r : banner3r}
             alt="Banner de promoción 3 - Fiorilli JR"
           />
         </Carousel.Item>
@@ -67,7 +67,7 @@ const Home = ({ productos }) => {
                 ? "d-block imagenCarrouselr"
                 : "d-block imagenCarrousel"
             }
-            src={ventana < 500 ? banner4 : banner4r}
+            src={ventana < 500 ? banner4r : banner4r}
             alt="Banner de promoción 4 - Fiorilli JR"
           />
         </Carousel.Item>
@@ -92,6 +92,7 @@ const Home = ({ productos }) => {
               style={{
                 minWidth: "200px",
                 minHeight: "300px",
+                maxWidth: "300px",
                 flex: "0 0 auto",
                 background: "#fff",
                 borderRadius: "12px",
@@ -105,7 +106,7 @@ const Home = ({ productos }) => {
                 alt={`Imagen de ${prod.nombre}`}
                 style={{
                   height: "480px",
-                  objectFit: "cover",
+                  maxWidth: "250px",
                   borderRadius: "8px",
                   marginBottom: "0.5rem",
                 }}
