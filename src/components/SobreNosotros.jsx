@@ -56,28 +56,29 @@ const SobreNosotros = () => {
                 <div>
                   <p>
                     Somos una <b>empresa familiar</b> ubicada en la calle
-                    Salvador Curutchet 2418, de la localidad Castelar, de la
-                    Provincia de Buenos Aires , comprometida con el cuidado de
-                    la salud. Nos especializamos en la elaboración de preparados
-                    magistrales individualizados, brindando productos seguros,
-                    de calidad y a precios económicos.
+                    Salvador Curutchet 2418, de la localidad Castelar, Partido
+                    de Morón, Provincia de Buenos Aires , comprometida con el
+                    cuidado de la salud. Nos especializamos en la elaboración de
+                    preparados magistrales individualizados, brindando productos
+                    seguros, de calidad y a precios económicos.
                   </p>
                   <p>
                     Ofrecemos atención personalizada, asesoramiento profesional
-                    y servicios como toma de presión arterial, Brindamos
-                    asesoramiento sobre como realizar el control de glucosa y
-                    cobertura de obras sociales.
+                    y servicios como toma de presión arterial, control de
+                    glucemia, atención de gran variedad de obras sociales: PAMI,
+                    IOMA, Policía Federal, MEDIFE, OMINT, SANCOR, AVALIAN, CASA,
+                    AMEBPBA y AMFFA, entre otras.
                   </p>
                   <p>
                     Nuestro equipo está en constante capacitación y trabajamos
-                    con tecnología actualizada, enfocados en seguir creciendo
-                    como institución y en fortalecer nuestro rol como{" "}
-                    <em>farmacia escuela</em> , formando a las nuevas
-                    generaciones de profesionales.
+                    con tecnología actualizada. Enfocados en seguir creciendo
+                    como institución y en fortalecer nuestro rol como farmacia
+                    escuela, formando a las nuevas generaciones de profesionales
+                    farmacéuticos.
                   </p>
                   <p>
-                    Somos una farmacia cercana, confiable y en permanente
-                    evolución, al servicio de nuestra comunidad.
+                    Una farmacia cercana, confiable y en permanente evolución al
+                    servicio de nuestra comunidad.
                   </p>
                 </div>
               </div>
