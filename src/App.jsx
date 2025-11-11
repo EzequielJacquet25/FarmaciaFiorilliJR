@@ -13,7 +13,7 @@ import NotFound from "./components/NotFound";
 const productos = [
   {
     categoria: "Skin Care",
-    nombre: "Agua Micerlar",
+    nombre: "Agua Micelar",
     img: ["1.jpg", "2.jpg", "3.jpg"],
   },
   {
