@@ -56,18 +56,18 @@ const SobreNosotros = () => {
                 <div>
                   <p>
                     Somos una <b>empresa familiar</b> ubicada en la calle
-                    Salvador Curutchet 2418, de la localidad Castelar, Partido
-                    de Morón, Provincia de Buenos Aires , comprometida con el
+                    Salvador Curutchet 2418, de la localidad Castelar,Partido de
+                    Morón, Provincia de Buenos Aires, comprometida con el
                     cuidado de la salud. Nos especializamos en la elaboración de
                     preparados magistrales individualizados, brindando productos
                     seguros, de calidad y a precios económicos.
                   </p>
                   <p>
                     Ofrecemos atención personalizada, asesoramiento profesional
-                    y servicios como toma de presión arterial, control de
-                    glucemia, atención de gran variedad de obras sociales: PAMI,
-                    IOMA, Policía Federal, MEDIFE, OMINT, SANCOR, AVALIAN, CASA,
-                    AMEBPBA y AMFFA, entre otras.
+                    y servicios como toma de presión arterial, asesoramiento
+                    sobre el uso de glucómetros, atención de gran variedad de
+                    obras sociales: PAMI, IOMA, Policía Federal, MEDIFE, OMINT,
+                    SANCOR, AVALIAN, CASA, AMEBPBA y AMFFA, entre otras.
                   </p>
                   <p>
                     Nuestro equipo está en constante capacitación y trabajamos
