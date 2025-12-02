@@ -64,7 +64,72 @@ body {
   height: 70dvh;
   margin: auto;
 }
+.img-item{
+  width: 100%;
+  min-width: 250px;
+  max-width: 700px;}
+/* Contenedor del aside: limitamos la altura y ocultamos lo que se sale */
+aside.border.w-25 {
+  max-height: 700px;     /* ajustá a gusto */
+  overflow: hidden;
+}
 
+
+/* El aside tiene una altura máxima y oculta lo que se sale */
+.aside-relacionados {
+  max-height: 500px;   /* ajustá a gusto */
+  overflow: hidden;
+}
+
+/* Contenedor "ventana" del carrusel */
+.carrusel-vertical {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Contenido que se desplaza verticalmente */
+.carrusel-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: scroll-vertical 15s linear infinite;
+}
+
+/* Imágenes dentro del carrusel */
+.img-relacionado {
+  width: 80%;          /* ajustá según diseño */
+  max-width: 240px;
+  display: block;
+}
+/* Animación: el contenido se desplaza hacia arriba la mitad de su altura
+   (como está duplicado, con -50% alcanza para completar un ciclo perfecto) */
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@keyframes scroll-Horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.contenedor-item{
+  max-width: 80%;
+}
+.sectionItemSelect{
+  width: 50%;
+  margin:auto ;
+  margin-top: 200px;
+}
 .carruselMargin {
   margin-top: 155px;
 }
@@ -392,6 +457,11 @@ background-color: var(--colorTexto);
   }
   .borderLogo {
     width: 100px;
+    border: none;
+    box-shadow: none;
+  }
+  .borderLogo:hover {
+    box-shadow: none;
   }
   .infoMostrar {
     display: none;
@@ -419,6 +489,32 @@ background-color: var(--colorTexto);
     height: 0;
     animation: none;
   }
+  .carrusel-contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem; 
+  animation: scroll-Horizontal 15s forwards infinite;
+}
+.carrusel-vertical {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.aside-relacionados {
+  max-height: 500px;   /* ajustá a gusto */
+  overflow: hidden;
+}
+.nombreProd{
+  width: 0;
+  height: 0;
+  display: none;
+  color: red;
+}
+.img-relacionado{
+  width: 75px;
+}
 }
 
 
