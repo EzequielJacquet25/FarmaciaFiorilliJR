@@ -211,7 +211,7 @@ const Footer = () => {
 
       <div className="d-flex flex-sm-row flex-column align-items-center justify-content-evenly footerInfo">
         <small>
-          © Copyright 2025 Farmacia JR Fiorilli - Todos los derechos reservados
+          © Copyright 2026 Farmacia JR Fiorilli - Todos los derechos reservados
         </small>
         <small>
           <a

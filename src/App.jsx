@@ -9,6 +9,7 @@ import SobreNosotros from "./components/SobreNosotros";
 import PreguntasFrecuentes from "./components/PreguntasFrecuentes";
 import Preparados from "./components/Preparados";
 import NotFound from "./components/NotFound";
+import Item from "./components/Item.jsx";
 
 const productos = [
   {
@@ -182,6 +183,8 @@ function App() {
   return (
     <>
       <Header logo={logo} />
+      <main className="contenedorPrincipal">
+
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home productos={productos} />} />
@@ -191,7 +194,9 @@ function App() {
           path="/preparados"
           element={<Preparados productos={productos} />}
         />
+        <Route path="/item/:name" element={<Item productos={productos} />} />
       </Routes>
+      </main>
       <BotonesChat />
       <Footer />
     </>

@@ -1,8 +1,12 @@
 import { Carousel, Col } from "react-bootstrap";
-
 import SeccionCategoria from "./SeccionCategoria";
 import { useEffect } from "react";
+import { useNavigate } from "react-router";
+
+//recordar centrar los divs
+
 const Preparados = ({ productos }) => {
+  const navigate = useNavigate();
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -36,22 +40,17 @@ const Preparados = ({ productos }) => {
               className="mb-3 p-2 bg-white rounded aparece-desde-izquierda"
             >
               <div
+                onClick={() => navigate(`/item/${producto.nombre}`)}
                 className="card"
                 style={{ minHeight: "100%", width: "100%" }}
               >
-                <Carousel>
-                  {producto.img.map((img, index) => (
-                    <Carousel.Item key={index}>
-                      <img
-                        className=" card-img-top"
-                        src={`/JPG/${producto.nombre
-                          .trim()
-                          .replace(/\s+/g, "")}/${img}`}
-                        alt={`${producto.nombre} - Imagen ${index + 1}`}
-                      />
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
+                <img
+                  className=" card-img-top"
+                  src={`/JPG/${producto.nombre
+                    .trim()
+                    .replace(/\s+/g, "")}/1.jpg`}
+                  alt={`${producto.nombre} `}
+                />
                 <div className="card-body">
                   <h5 className="card-title">{producto.nombre}</h5>
                 </div>
