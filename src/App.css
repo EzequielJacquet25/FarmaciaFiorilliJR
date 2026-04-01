@@ -21,7 +21,19 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar:horizontal {
   height: 8px;           /* Mantiene horizontal */
 }
+.carrusel-contenido:hover {
+  animation-play-state: paused;
+}
 
+.aparece-desde-izquierda:hover {
+  padding: 0px !important;
+  margin: 0px !important;
+  max-height: 100;
+}
+.aparece-desde-izquierda > .card:hover{
+  padding: 0 !important;
+  cursor: pointer;
+}
 /* ===============================
    RESET Y BASE
 ================================= */
@@ -69,6 +81,7 @@ body {
 }
 .img-item{
   width: 350px;
+  height: 36rem;
   min-width: 250px;
   max-width: 1000px;}
 /* Contenedor del aside: limitamos la altura y ocultamos lo que se sale */
@@ -84,9 +97,11 @@ aside.border.w-25 {
     overflow: hidden;
     position: sticky;
     top: 200px;
-    max-width: 250px;
+    max-width: 100%;
 }
-
+.texto-explicativo{
+  max-width: 500px;
+}
 /* Contenedor "ventana" del carrusel */
 .carrusel-vertical {
   position: relative;
@@ -100,12 +115,34 @@ aside.border.w-25 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   animation: scroll-vertical 15s linear infinite;
 }
+button{
+  text-decoration: none;
+}
+.card-relacionado {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
+.card-relacionado:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.img-relacionado {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
 /* Imágenes dentro del carrusel */
 .img-relacionado {
-  width: 80%;          /* ajustá según diseño */
+  width: 25%;          /* ajustá según diseño */
   max-width: 240px;
   display: block;
 }
@@ -486,6 +523,7 @@ background-color: var(--colorTexto);
 }
 }
 @media screen and (max-width: 500px) {
+  
 .carruselMargin{
     margin-top: 100px;
   }
@@ -499,9 +537,11 @@ background-color: var(--colorTexto);
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: max-content;
   gap: 1rem; 
-  animation: scroll-Horizontal 15s forwards infinite;
+  animation: scroll-Horizontal 10s forwards infinite;
 }
+
 .carrusel-vertical {
   position: relative;
   width: 100%;
@@ -509,8 +549,11 @@ background-color: var(--colorTexto);
   overflow: hidden;
 }
 .aside-relacionados {
-  max-height: 500px;   /* ajustá a gusto */
-  overflow: hidden;
+      max-height: 500px;
+    overflow: hidden;
+    position: static;
+    width: 100% !important;
+    max-width: 100%;
 }
 .nombreProd{
   width: 0;

@@ -1,192 +1,210 @@
 import { useParams, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+
+const normalizarTexto = (texto = "") =>
+  texto
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLowerCase();
+
+const crearSlugImagen = (texto = "") => texto.trim().replace(/\s+/g, "");
 
 const Item = ({ productos }) => {
   const { name } = useParams();
+  const nombreDecodificado = decodeURIComponent(name || "");
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+  const producto = useMemo(() => {
+    return productos.find(
+      (p) => normalizarTexto(p.nombre) === normalizarTexto(nombreDecodificado),
+    );
+  }, [productos, nombreDecodificado]);
 
-  const producto = productos.find((p) => p.nombre === name);
-
-  const slug = producto ? producto.nombre.trim().replace(/\s+/g, "") : "";
+  const slug = producto ? crearSlugImagen(producto.nombre) : "";
+  const imagenes = [1, 2, 3].map((n) => `/JPG/${slug}/${n}.jpg`);
 
   const [img, setImg] = useState("");
 
   useEffect(() => {
     if (producto) {
-      setImg(`/JPG/${slug}/1.jpg`);
+      setImg(imagenes[0]);
     }
   }, [producto, slug]);
 
-  const articulosRelacionados = producto
-    ? productos.filter(
-        (p) =>
-          p.categoria === producto.categoria && p.nombre !== producto.nombre,
-      )
-    : [];
+  const articulosRelacionados = useMemo(() => {
+    if (!producto) return [];
+
+    return productos.filter(
+      (p) => p.categoria === producto.categoria && p.nombre !== producto.nombre,
+    );
+  }, [producto, productos]);
 
   if (!producto) {
     return (
-      <main className="p-4">
+      <main className="p-4 text-center">
         <h1>Producto no encontrado</h1>
-        <Link to="/">Volver al inicio</Link>
+        <Link to="/" className="btn btn-outline-success mt-3">
+          Volver al inicio
+        </Link>
       </main>
     );
   }
 
   return (
     <main className="d-flex flex-column justify-content-center align-items-center">
-      <div className="d-flex flex-column-reverse flex-md-row contenedor-item justify-content-center align-items-start gap-2 m-2">
-        <section className="h-100 d-flex  align-items-center justify-content-center gap-2">
-          <article className="h-100 w-100 art-img-select d-flex flex-column-reverse flex-md-row justify-content-between align-items-center ">
-            {/* Miniaturas */}
-            <div className=" h-100 content-img-select d-flex flex-column justify-content-center align-items-center gap-2">
-              <div className="h-100 content-img-select d-flex flex-row flex-md-column justify-content-center align-items-center gap-2">
-                {[1, 2, 3].map((n) => (
+      <div className="d-flex flex-column-reverse flex-xl-row contenedor-item justify-content-center align-items-start gap-4 m-4 w-100">
+        <section
+          className="h-100 card-relacionado d-flex flex-column-reverse flex-lg-row align-items-start justify-content-center gap-4
+         p-3 m-2 w-100"
+        >
+          <article className="h-100 w-100 art-img-select d-flex flex-column-reverse flex-md-row justify-content-between align-items-center">
+            <div className="h-100 content-img-select d-flex flex-column justify-content-center align-items-center gap-4">
+              <div className="h-100 content-img-select d-flex flex-row flex-md-column justify-content-center align-items-center gap-4">
+                {imagenes.map((ruta, index) => (
                   <img
-                    key={n}
-                    onClick={() => setImg(`/JPG/${slug}/${n}.jpg`)}
-                    className="w-25 p-2 "
-                    src={`/JPG/${slug}/${n}.jpg`}
-                    alt={`${producto.nombre} ${n}`}
+                    key={ruta}
+                    onClick={() => setImg(ruta)}
+                    className="w-25 p-3 img-thumbnail"
+                    src={ruta}
+                    alt={`${producto.nombre} ${index + 1}`}
                     style={{ cursor: "pointer" }}
                   />
                 ))}
               </div>
             </div>
 
-            {/* Imagen principal */}
-            <div className=" content-img-select d-flex justify-content-center align-items-center">
+            <div className="content-img-select d-flex justify-content-center align-items-center pb-3">
               {img && (
-                <img className="img-item" src={img} alt={producto.nombre} />
+                <img
+                  className="img-item rounded "
+                  src={img}
+                  alt={producto.nombre}
+                />
               )}
             </div>
           </article>
 
-          <article className=" w-100 d-flex flex-column gap-2 justify-content-start align-items-center">
-            <h4 className="text-center w-100">{producto.nombre}</h4>
-            <p className="text-center ">{producto.categoria}</p>
-            <p className="m-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-              recusandae temporibus blanditiis possimus non ad magnam facere
-              iure hic itaque, eligendi dignissimos voluptate! Tempora,
-              voluptatibus. Illum atque quos magni minus.
-            </p>
-            <p className="m-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit atque
-              eaque ea quaerat laudantium veniam facere, voluptatibus aperiam
-              cupiditate eum. Recusandae eaque voluptate laborum molestiae nihil
-              pariatur eum dolorem aspernatur.
-            </p>
+          <article className="w-100  d-flex flex-column gap-4 justify-content-start align-items-center">
+            <h1 className="text-center w-100">{producto.nombre}</h1>
+            <p className="text-center mb-0">{producto.categoria}</p>
+            <h4>Formas de uso:</h4>
+            <p className="m-2">{producto.uso}</p>
           </article>
         </section>
 
-        <aside className=" w-100 p-2 d-flex flex-column justify-content-center align-items-center   aside-relacionados">
-          <h2 className="h5">Artículos Relacionados</h2>
+        <aside className="w-25 w-xl-25 p-3 d-flex flex-column justify-content-center align-items-center aside-relacionados">
+          <h2 className="h5 text-center">Artículos relacionados</h2>
 
           {articulosRelacionados.length === 0 && (
-            <h2 className="text-center">No hay artículos relacionados</h2>
+            <p className="text-center mb-0">No hay artículos relacionados</p>
           )}
 
           {articulosRelacionados.length > 0 && (
-            <div className="carrusel-vertical">
-              {/* Primer bloque */}
+            <div className="carrusel-vertical w-100">
               <div className="carrusel-contenido">
-                {articulosRelacionados.map((p) => (
-                  <div className="d-flex gap-3 align-items-center justify-content-center my-2">
-                    <Link
-                      key={`uno-${p.nombre}`}
-                      to={`/item/${p.nombre}`}
-                      className="border w-50 d-flex justify-content-center align-items-center"
-                    >
-                      <img
-                        className="img-relacionado  "
-                        src={`/JPG/${p.nombre
-                          .trim()
-                          .replace(/\s+/g, "")}/1.jpg`}
-                        alt={p.nombre}
-                      />
-                    </Link>
-                    {/* <h5 className="w-50 nombreProd">{p.nombre}</h5> */}
-                  </div>
-                ))}
+                {articulosRelacionados.map((p) => {
+                  const rutaProducto = `/item/${encodeURIComponent(p.nombre)}`;
+                  const slugRelacionado = crearSlugImagen(p.nombre);
 
-                {/* Segundo bloque (duplicado) */}
-                {articulosRelacionados.map((p) => (
-                  <div className="d-flex gap-3 align-items-center justify-content-center my-2">
-                    <Link
-                      key={`dos-${p.nombre}`}
-                      to={`/item/${p.nombre}`}
-                      className="border w-50 d-flex justify-content-center align-items-center"
-                    >
-                      <img
-                        className="img-relacionado  "
-                        src={`/JPG/${p.nombre
-                          .trim()
-                          .replace(/\s+/g, "")}/1.jpg`}
-                        alt={p.nombre}
-                      />
-                    </Link>
-                    {/* <h5 className="w-50 nombreProd">{p.nombre}</h5> */}
-                  </div>
-                ))}
+                  return (
+                    <div key={`uno-${p.nombre}`} className="my-2 w-100">
+                      <Link
+                        to={rutaProducto}
+                        className="card card-relacionado text-decoration-none d-flex flex-row align-items-center gap-3 p-2"
+                      >
+                        <img
+                          className="img-relacionado"
+                          src={`/JPG/${slugRelacionado}/1.jpg`}
+                          alt={p.nombre}
+                        />
+
+                        <div className="d-flex flex-column justify-content-center">
+                          <h6 className="mb-1 text-dark">{p.nombre}</h6>
+
+                          <small className="text-secondary">{p.compo}</small>
+                        </div>
+                      </Link>
+                    </div>
+                  );
+                })}
+
+                {articulosRelacionados.map((p) => {
+                  const rutaProducto = `/item/${encodeURIComponent(p.nombre)}`;
+                  const slugRelacionado = crearSlugImagen(p.nombre);
+
+                  return (
+                    <div key={`uno-${p.nombre}`} className="my-2 w-100">
+                      <Link
+                        to={rutaProducto}
+                        className="card card-relacionado text-decoration-none d-flex flex-row align-items-center gap-3 p-2"
+                      >
+                        <img
+                          className="img-relacionado"
+                          src={`/JPG/${slugRelacionado}/1.jpg`}
+                          alt={p.nombre}
+                        />
+
+                        <div className="d-flex flex-column justify-content-center">
+                          <h6 className="mb-1 text-dark">{p.nombre}</h6>
+                          <small className="text-secondary">{p.compo}</small>
+                        </div>
+                      </Link>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
         </aside>
       </div>
 
-      <footer className="mt-2 w-100 d-flex flex-row justify-content-center align-items-center gap-4 p-4">
-        <article className="w-100 text-center">
-          <h4>Formas de uso</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            quaerat obcaecati veritatis repellat esse laborum ipsum velit,
-            blanditiis expedita maxime. Qui necessitatibus consequatur incidunt
-            omnis at voluptatibus pariatur dolore laborum.
-          </p>
+      <footer className="mt-2 w-100 d-flex flex-column flex-lg-row justify-content-center align-items-start gap-4 p-3">
+        <article className="w-100 text-center card-relacionado p-3">
+          <h2 className="h4">Recomendaciones</h2>
+          <p>{producto.recomendaciones}</p>
         </article>
-        <article className="w-100 text-center">
-          <h4>Ingredientes</h4>
-          <ol class="list-group list-group-numbered">
-            <li class="list-group-item">A list item</li>
-            <li class="list-group-item">A list item</li>
-            <li class="list-group-item">A list item</li>
-          </ol>
+
+        <article className="w-100 text-center card-relacionado p-3">
+          <h2 className="h4">Ingredientes</h2>
+          <p>{producto.compo}</p>
         </article>
-        <article className="w-100 text-center">
-          <h4>productos relacionados</h4>
-          <div class="list-group">
-            <a
-              href="#"
-              class="list-group-item list-group-item-action"
-              aria-current="true"
+
+        <article className="w-100 text-center card-relacionado">
+          <h2 className="h4">Este producto se combina con:</h2>
+
+          <div className="list-group">
+            <button
+              type="button"
+              className="list-group-item list-group-item-action"
             >
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small>3 days ago</small>
+              <div className="d-flex w-100 justify-content-between">
+                <h5 className="mb-1">List group item heading</h5>
+                <small className="text-body-secondary">3 days ago</small>
               </div>
-              <p class="mb-1">Some placeholder content in a paragraph.</p>
-              <small>And some small print.</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small class="text-body-secondary">3 days ago</small>
-              </div>
-              <p class="mb-1">Some placeholder content in a paragraph.</p>
-              <small class="text-body-secondary">
+              <p className="mb-1">Some placeholder content in a paragraph.</p>
+              <small className="text-body-secondary">
                 And some muted small print.
               </small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small class="text-body-secondary">3 days ago</small>
+            </button>
+
+            <button
+              type="button"
+              className="list-group-item list-group-item-action"
+            >
+              <div className="d-flex w-100 justify-content-between">
+                <h5 className="mb-1">List group item heading</h5>
+                <small className="text-body-secondary">3 days ago</small>
               </div>
-              <p class="mb-1">Some placeholder content in a paragraph.</p>
-              <small class="text-body-secondary">
+              <p className="mb-1">Some placeholder content in a paragraph.</p>
+              <small className="text-body-secondary">
                 And some muted small print.
               </small>
-            </a>
+            </button>
           </div>
         </article>
       </footer>
