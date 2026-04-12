@@ -75,8 +75,7 @@ body {
 
 .imagenCarrousel {
   aspect-ratio: 16/9;
-  width: 70%;
-  height: 70dvh;
+  width: 100%;
   margin: auto;
 }
 .img-item{
@@ -174,7 +173,7 @@ button{
   margin-top: 200px;
 }
 .carruselMargin {
-  margin-top: 155px;
+  margin-top: 80px;
 }
 .imagenCarrouselr {
   aspect-ratio: 20/9;
@@ -213,11 +212,7 @@ button{
 /* ===============================
    NAVBAR Y LOGO
 ================================= */
-.fondoNav {
-  background-color: rgb(247, 250, 243);
-  border-bottom: 2px solid var(--primerColor);
-  box-shadow: 0px 7px 9px 0px;
-}
+
 .imagenLogo {
   width: 100px;
 }
@@ -491,7 +486,7 @@ background-color: var(--colorTexto);
 
 @media screen and (max-width: 1600px) {
   .carruselMargin {
-    margin-top: 25vh;
+    margin-top: 20vh;
   }
 }
 @media screen and (max-width: 1200px) {

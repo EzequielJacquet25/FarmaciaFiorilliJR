@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { useEffect, useState } from "react";
+import "./Header.css";
 
 const Header = ({ logo }) => {
   const [ventana, setVentana] = useState(window.innerWidth);
@@ -16,7 +17,7 @@ const Header = ({ logo }) => {
     };
   }, []);
   return (
-    <header className="fixed-top">
+    <header className="fixed-top nav-content">
       <Container
         fluid
         className="w-100 d-flex align-items-center justify-content-evenly infoMostrar"
@@ -111,10 +112,7 @@ const Header = ({ logo }) => {
       </Container>
       <Navbar collapseOnSelect expand="lg" className="fondoNav">
         <Container>
-          <Navbar.Brand
-            href="/"
-            className="d-flex align-items-center borderLogo"
-          >
+          <Navbar.Brand href="/" className="d-flex align-items-center">
             <img
               alt="Logo de Farmacia Fiorilli JR"
               src={logo}

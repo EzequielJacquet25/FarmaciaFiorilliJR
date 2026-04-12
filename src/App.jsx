@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router";
 import logo from "./assets/logoFarmaciaFiorilliJR.png";
-import Header from "../src/components/Header";
+import Header from "./components/Header/Header.jsx";
 import Footer from "../src/components/Footer.jsx";
 import Home from "./components/Home";
 import BotonesChat from "./components/BotonesChat";
