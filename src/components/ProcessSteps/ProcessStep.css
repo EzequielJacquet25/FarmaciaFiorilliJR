@@ -1,0 +1,44 @@
+.process-step {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.process-step-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process-step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #22a652;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.process-step-line {
+  width: 2px;
+  flex: 1;
+  background: #dce8ef;
+  margin-top: 0.5rem;
+}
+
+.process-step-content {
+  padding-bottom: 2rem;
+}
+
+.process-step-content h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.process-step-content p {
+  color: #5f6b70;
+  line-height: 1.6;
+}

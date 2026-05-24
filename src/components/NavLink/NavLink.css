@@ -1,0 +1,17 @@
+.nav-link {
+  color: #191c1d;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease, border 0.2s ease;
+  padding-bottom: 0.25rem;
+}
+
+.nav-link:hover {
+  color: #1b8f3f;
+  transform: scale(1.05);
+}
+
+.nav-link-active {
+  color: #1b8f3f;
+  border-bottom: 2px solid #004275;
+  font-weight: 600;
+}

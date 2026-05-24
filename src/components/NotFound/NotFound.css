@@ -1,0 +1,126 @@
+.notfound {
+  min-height: 100vh;
+  padding: 120px 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.notfound-container {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+}
+
+/* Icono */
+.notfound-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-icon span {
+  font-size: 32px;
+  color: var(--primary);
+}
+
+/* Texto */
+.notfound-error {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.notfound-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.notfound-text p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Buscador */
+.notfound-search {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.notfound-search input {
+  width: 100%;
+  padding: 14px 16px 14px 40px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: 0.3s;
+}
+
+.notfound-search input:focus {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: gray;
+}
+
+/* Botones */
+.notfound-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--text-primary);
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  transform: scale(1.05);
+}

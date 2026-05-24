@@ -1,0 +1,103 @@
+/* CONTENEDOR PRINCIPAL */
+.recommendations-aside {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* STICKY */
+.recommendations-aside-sticky {
+  position: sticky;
+  top: 100px; /* separación del header */
+  
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* TÍTULO */
+.recommendations-aside-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #004275;
+
+  margin-bottom: 1.5rem;
+}
+
+/* LISTA */
+.recommendations-aside-list{
+overflow: hidden;
+display: flex;
+flex-direction: row ;
+justify-content: center;
+align-items: center;
+}
+.recommendation-aside-card{
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 200px;
+}
+/* ========================= */
+/* 📱 TABLET */
+/* ========================= */
+@media (max-width: 1024px) {
+  .recommendations-aside {
+    max-width: 260px;
+  }
+.recommendations-aside-list{
+display: flex;
+flex-direction: column !important;
+}
+  .recommendations-aside-sticky {
+    padding: 1.2rem;
+  }
+  .recommendation-aside-card{
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 200px;
+}
+}
+
+/* ========================= */
+/* 📱 MOBILE */
+/* ========================= */
+@media (max-width: 425px) {
+  .recommendations-aside {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .recommendations-aside-sticky {
+    position: relative; /* deja de ser sticky */
+    top: 0;
+  }
+
+  .recommendations-aside-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .recommendations-aside-list {
+    flex-direction: row !important;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .recommendations-aside-list::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .recommendations-aside-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .recommendation-aside-card{
+  flex: 0 0 auto;
+  width: 250px;
+  
+}
+}

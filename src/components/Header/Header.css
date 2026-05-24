@@ -1,0 +1,21 @@
+.header{
+    background-color: #f8fafa81;
+    backdrop-filter: blur(24px);
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22a652;
+}
+
+a:hover{
+    color: #22a652;
+    border-bottom: #1b7f3f 2px solid;
+    font-weight: 600;
+    padding: 7px;
+}
+
+.logo-img{
+    width: 50px;
+    border-radius: 50%;
+}

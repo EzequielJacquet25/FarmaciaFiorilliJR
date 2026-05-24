@@ -1,0 +1,43 @@
+.quote-card {
+  background: rgba(220, 232, 239, 0.45);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.quote-card-text {
+  margin: 0;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: #1b7f3f;
+}
+
+.quote-card-footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.quote-card-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #5ed39a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-card-icon {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.quote-card-author {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #22a652;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

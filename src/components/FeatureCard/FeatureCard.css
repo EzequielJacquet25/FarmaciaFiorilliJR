@@ -1,0 +1,55 @@
+.feature-card {
+  border-radius: 1.75rem;
+  padding: 3rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.feature-card-light {
+  background: #ffffff;
+  color: #22a652;
+}
+
+.feature-card-primary {
+  background: #6ed39a;
+  color: #ffffff;
+}
+
+.feature-card-secondary {
+  background: #6ed39a;
+  color: #163042;
+}
+
+.feature-card-soft {
+  background: #e8eef1;
+  color: #22a652;
+}
+
+.feature-card-icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.feature-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.feature-card-subtitle {
+  margin: 0 0 1rem 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.feature-card-text {
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.92;
+}

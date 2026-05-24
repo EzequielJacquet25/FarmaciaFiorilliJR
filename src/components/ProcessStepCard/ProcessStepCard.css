@@ -1,0 +1,36 @@
+.process-step-card {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.process-step-card-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.process-step-card-icon {
+  color: #22a652;
+  font-size: 2rem;
+}
+
+.process-step-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1b7f3f;
+  margin: 0 0 0.5rem 0;
+}
+
+.process-step-card-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #5f6b70;
+  line-height: 1.6;
+}

@@ -1,0 +1,28 @@
+.category-filter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 0.85rem;
+  background: transparent;
+  color: #6ed39a;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.category-filter:hover {
+  background: #6ed39a;
+  color: #1a1d19;
+}
+
+.category-filter-active {
+  background: rgba(27, 127, 64, 0.1);
+  color: #1b7f3f;
+  font-weight: 700;
+}
+
+.category-filter-icon {
+  font-size: 1rem;
+}

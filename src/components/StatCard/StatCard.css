@@ -1,0 +1,20 @@
+.stat-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #eef3f5;
+  min-width: 180px;
+}
+
+.stat-card-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1b8f3f;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat-card-label {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #6b7280;
+}
