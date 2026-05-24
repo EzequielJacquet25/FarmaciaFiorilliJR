@@ -125,11 +125,11 @@ export default function Footer() {
           </small>
           <small>
             <a
-              href="https://www.marcelosanchezdev.com.ar/"
+              href="https://dblock.com.ar/"
               target="_blank"
               rel="noreferrer"
             >
-              Desarrollado por @MarceloSanchezDev
+              Desarrollado por @DBLOCK
             </a>
           </small>
         </div>
