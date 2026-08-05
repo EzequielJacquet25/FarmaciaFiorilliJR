@@ -1,7 +1,7 @@
 import { memo } from "react";
 import "./Video.css";
 
-const Videos = memo(function Videos({ video }) {
+const Videos = memo(function Videos({ video, poster = "/placeholder-product.svg" }) {
   return (
     <div className="video-wrapper">
       <video
@@ -12,6 +12,7 @@ const Videos = memo(function Videos({ video }) {
         muted
         playsInline
         preload="metadata"
+        poster={poster}
       >
         <source src={`/videos/${video}`} type="video/mp4" />
         Tu navegador no soporta el formato de video.

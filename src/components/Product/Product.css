@@ -81,7 +81,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 2.5rem;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
@@ -154,7 +154,8 @@
 
 .product-usage-image {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 5;
+  height: auto;
   display: block;
   object-fit: cover;
   border-radius: 1.75rem;
@@ -289,5 +290,16 @@
   .product-cta-box {
     border-radius: 2rem;
     padding: 2.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-cta-actions {
+    align-items: stretch;
+  }
+
+  .product-cta-actions .btn,
+  .product-cta-actions .btn a {
+    width: 100%;
   }
 }

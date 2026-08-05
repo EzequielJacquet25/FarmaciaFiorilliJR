@@ -11,15 +11,14 @@ import imgHome8 from "../../assets/PAMI-OS.png";
 import imgHome9 from "../../assets/OSDE-OS.png";
 import imgHome10 from "../../assets/PFA-OS.png";
 import imgHome11 from "../../assets/SANCOR-OS.png";
-import logo from "../../assets/LogoVertical.png";
 import Button from "../Button/Button";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import InfoCard from "../InfoCard/InfoCard";
-import "./Home.css";
 import { useEffect } from "react";
 import Videos from "../Video/Videos";
 import EspecialidadesInfo from "../EspecialidadesInfo/EspecialidadesInfo";
 import { useNavigate } from "react-router-dom";
+import { site } from "../../data/site";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -330,38 +329,22 @@ export default function Home() {
         </div>
 
         <div className="horarios-card">
-          <div className="horario-row">
-            <div className="horario-left">
-              <h3>LUNES A SÁBADOS</h3>
-              <span>MAÑANA</span>
+          {site.hours.map((hour, index) => (
+            <div key={`${hour.days}-${hour.period}`}>
+              <div
+                className={`horario-row${index === site.hours.length - 1 ? " horario-row-last" : ""}`}
+              >
+                <div className="horario-left">
+                  <h3>{hour.days}</h3>
+                  {hour.period && <span>{hour.period}</span>}
+                </div>
+                <div className="horario-right">
+                  <h3>{hour.time}</h3>
+                </div>
+              </div>
+              {index < site.hours.length - 1 && <div className="horario-divider" />}
             </div>
-            <div className="horario-right">
-              <h3>9:00 a 13:00 Hs</h3>
-            </div>
-          </div>
-
-          <div className="horario-divider"></div>
-
-          <div className="horario-row">
-            <div className="horario-left">
-              <h3>LUNES A SÁBADOS</h3>
-              <span>TARDE</span>
-            </div>
-            <div className="horario-right">
-              <h3>16:30 a 20:00 Hs</h3>
-            </div>
-          </div>
-
-          <div className="horario-divider"></div>
-
-          <div className="horario-row horario-row-last">
-            <div className="horario-left">
-              <h3>DOMINGO</h3>
-            </div>
-            <div className="horario-right">
-              <h3>CERRADO</h3>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </main>

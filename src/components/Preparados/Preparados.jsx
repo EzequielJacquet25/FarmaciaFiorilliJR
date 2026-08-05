@@ -4,7 +4,6 @@ import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
 import imgPreparados from "../../assets/imagen-faq.png";
 import Videos from "../Video/Videos";
-import rf from "../../assets/rutinaFacial.png";
 import "./Preparados.css";
 import { useEffect, useState } from "react";
 
@@ -36,29 +35,27 @@ const processSteps = [
   },
 ];
 
+const categories = [
+  "Todos",
+  "Skin Care",
+  "Medicamentos de uso tópico",
+  "Productos de origen natural",
+  "Suplementos",
+];
+
 export default function Preparados({ products }) {
-  const [filter, setFilter] = useState("");
-  const [categories, setCategories] = useState([
-    { label: "Todos", active: true },
-    { label: "Skin Care", active: false },
-    { label: "Medicamentos de uso tópico", active: false },
-    { label: "Productos de origen natural", active: false },
-    { label: "Suplementos", active: false },
-  ]);
-  let filteredProducts 
-  if (filter === "Todos") {
-    filteredProducts = products;
-  } else {
-  filteredProducts = products.filter( 
-    (product) => !filter || product.categoria === filter,
-  );
-  }
+  const [filter, setFilter] = useState("Todos");
+  const filteredProducts =
+    filter === "Todos"
+      ? products
+      : products.filter((product) => product.categoria === filter);
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  }, [categories]);
+  }, []);
   return (
     <main className="preparados-main">
       <section className="preparados-hero-section">
@@ -86,21 +83,13 @@ export default function Preparados({ products }) {
             <div>
               <h3 className="preparados-sidebar-title">Categorías</h3>
 
-              <div className="preparados-category-list">
+              <div className="preparados-category-list" aria-label="Filtrar preparados por categoría">
                 {categories.map((category) => (
                   <CategoryFilter
-                    key={category.label}
-                    label={category.label}
-                    active={category.active}
-                    onClick={() => {
-                      setFilter(category.label);
-                      setCategories((prev) =>
-                        prev.map((cat) => ({
-                          ...cat,
-                          active: cat.label === category.label,
-                        })),
-                      );
-                    }}
+                    key={category}
+                    label={category}
+                    active={filter === category}
+                    onClick={() => setFilter(category)}
                   />
                 ))}
               </div>
@@ -109,22 +98,26 @@ export default function Preparados({ products }) {
           </aside>
           {filteredProducts.length > 0 ? (
             <div className="preparados-products">
+              <p className="preparados-results" aria-live="polite">
+                {filteredProducts.length} preparados disponibles en {filter}.
+              </p>
               <div className="preparados-products-grid">
-                {filteredProducts.map((product, index) => (
+                {filteredProducts.map((product) => (
                   <ProductCard
-                    key={index}
+                    key={product.nombre}
                     image={product.img[0]}
                     category={product.categoria}
                     title={product.nombre}
                     principles={product.beneficios}
-                    details={product.details}
                     receta={product.receta}
                   />
                 ))}
               </div>
             </div>
           ) : (
-            <p>No hay productos disponibles en esta categoría</p>
+            <p className="preparados-empty" role="status">
+              No hay productos disponibles en esta categoría.
+            </p>
           )}
         </div>
       </section>

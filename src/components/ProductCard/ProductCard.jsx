@@ -6,7 +6,6 @@ export default function ProductCard({
   category,
   title,
   principles = [],
-  details,
   receta,
 }) {
   const navigate = useNavigate();
@@ -17,6 +16,12 @@ export default function ProductCard({
           className="product-card-image"
           src={`/JPG/${title.trim().replace(/\s+/g, "")}/${image}`}
           alt={title}
+          loading="lazy"
+          decoding="async"
+          onError={(event) => {
+            event.currentTarget.onerror = null;
+            event.currentTarget.src = "/placeholder-product.svg";
+          }}
         />
         <div className="product-card-badge">{category}</div>
       </div>

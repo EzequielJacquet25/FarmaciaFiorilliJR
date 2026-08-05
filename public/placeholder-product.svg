@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title description">
+  <title id="title">Imagen de producto no disponible</title>
+  <desc id="description">Marcador visual de Farmacia Fiorilli JR para un producto sin fotografía.</desc>
+  <rect width="800" height="1000" fill="#edf7f0"/>
+  <rect x="80" y="100" width="640" height="800" rx="48" fill="#ffffff" stroke="#cde7d5" stroke-width="8"/>
+  <circle cx="400" cy="420" r="130" fill="#d7f0df"/>
+  <path d="M370 290h60v100h100v60H430v100h-60V450H270v-60h100z" fill="#197a40"/>
+  <text x="400" y="660" text-anchor="middle" fill="#197a40" font-family="Arial, sans-serif" font-size="34" font-weight="700">Farmacia Fiorilli JR</text>
+  <text x="400" y="712" text-anchor="middle" fill="#527360" font-family="Arial, sans-serif" font-size="26">Imagen no disponible</text>
+</svg>

@@ -341,11 +341,9 @@
   align-items: center;
   overflow: hidden;
 
-  /* Reemplazá esta imagen por la tuya */
-  background-image: url("farmacia-fondo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background:
+    radial-gradient(circle at top right, rgba(122, 195, 143, 0.2), transparent 42%),
+    #f5faf6;
 }
 
 .horarios-overlay {

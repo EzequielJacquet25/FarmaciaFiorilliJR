@@ -4,9 +4,10 @@ import BenefitCard from "../BenefitCard/BeneficCard";
 import QuoteCard from "../QuoteCard/QuoteCard";
 import "./Product.css";
 import RecomendacionesAside from "../RecomendacionesAside/RecomendacionesAside";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Videos from "../Video/Videos";
+import { site } from "../../data/site";
 
 // dejá tu array products acá igual que lo tenés
 
@@ -23,7 +24,7 @@ export default function Product({ products }) {
   const navigate = useNavigate();
   const { name } = useParams();
   const nombreDecodificado = decodeURIComponent(name || "");
-  const mensaje = `Hola Farmacia Fiorilli JR, quiero consultar por un ${name}`;
+  const mensaje = `Hola ${site.name}, quiero consultar por un ${name}`;
 
   useEffect(() => {
     window.scrollTo({
@@ -36,11 +37,10 @@ export default function Product({ products }) {
     return products.find(
       (p) => normalizarTexto(p.nombre) === normalizarTexto(nombreDecodificado),
     );
-  }, [nombreDecodificado]);
+  }, [nombreDecodificado, products]);
 
   const slug = producto ? crearSlugImagen(producto.nombre) : "";
-  const imagenes = [1, 2, 3].map((n) => `/JPG/${slug}/${n}.jpg`);
-  const [img, setImg] = useState(imagenes[0]);
+  const imagePath = `/JPG/${slug}/1.jpg`;
 
   const articulosRelacionados = useMemo(() => {
     if (!producto) return [];
@@ -48,7 +48,7 @@ export default function Product({ products }) {
     return products.filter(
       (p) => p.categoria === producto.categoria && p.nombre !== producto.nombre,
     );
-  }, [producto]);
+  }, [producto, products]);
 
   const steps = [
     {
@@ -101,11 +101,13 @@ export default function Product({ products }) {
                 <div className="product-hero-media-bg"></div>
 
                 <img
-                  src={img || imagenes[0]}
+                  src={imagePath}
                   alt={producto.nombre}
+                  decoding="async"
                   className="product-hero-image"
                   onError={(e) => {
-                    e.currentTarget.src = "/placeholder-product.jpg";
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = "/placeholder-product.svg";
                   }}
                 />
               </div>
@@ -136,7 +138,7 @@ export default function Product({ products }) {
 
                 <QuoteCard
                   text="Cada preparado se elabora de forma individualizada, respetando criterios farmacéuticos de seguridad y calidad."
-                  author="Farmacia Fiorilli JR"
+                  author={site.name}
                 />
               </div>
 
@@ -178,11 +180,14 @@ export default function Product({ products }) {
               ) : (
                 <div className="product-usage-image-wrap">
                   <img
-                    src={img || imagenes[0]}
-                    alt={producto.nombre}
-                    className="product-usage-image"
-                    onError={(e) => {
-                      e.currentTarget.src = "/placeholder-product.jpg";
+                  src={imagePath}
+                  alt={producto.nombre}
+                  loading="lazy"
+                  decoding="async"
+                  className="product-usage-image"
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = "/placeholder-product.svg";
                     }}
                   />
                 </div>
@@ -226,7 +231,7 @@ export default function Product({ products }) {
               <div className="product-cta-actions">
                 <Button variant="light">
                   <a
-                    href={`https://wa.me/5491127490223?text=${encodeURIComponent(mensaje)}`}
+                    href={`${site.contact.whatsappUrl}?text=${encodeURIComponent(mensaje)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -1,5 +1,6 @@
 import "./Footer.css";
 import logoVertical from "../../assets/LogoVertical.png";
+import { site } from "../../data/site";
 
 export default function Footer() {
   return (
@@ -9,10 +10,10 @@ export default function Footer() {
           <div className="footer-brand">
             <img
               src={logoVertical}
-              alt="Farmacia Fiorilli JR"
+              alt={site.name}
               className="logo-vertical"
             />
-            <h3>Farmacia Fiorilli JR</h3>
+            <h3>{site.name}</h3>
             <p>
               Especialistas en formulación magistral con más de 25 años de
               experiencia en la industria farmacéutica.
@@ -22,7 +23,7 @@ export default function Footer() {
           <div className="footer-contact">
             <h4>Contacto</h4>
 
-            <a href="tel:+541154307405" className="flex aling-start gap-2">
+            <a href={site.contact.phoneHref} className="flex aling-start gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -33,14 +34,14 @@ export default function Footer() {
               >
                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
               </svg>
-              (+54) 11 5430-7405
+              {site.contact.phoneDisplay}
             </a>
-            <p>fiorilli.jrfarmacia@gmail.com</p>
-            <p>Castelar, Buenos Aires, Argentina</p>
+            <p>{site.contact.email}</p>
+            <p>{site.contact.location}</p>
             <iframe
               className="mapa"
-              title="Ubicación Farmacia Fiorilli JR"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.2857090855564!2d-58.642696224281764!3d-34.63463725913177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8b68285890b%3A0x3e3f63ed80312161!2sFarmacia%20FIORILLI%20JR!5e1!3m2!1ses!2sar!4v1750039108557!5m2!1ses!2sar"
+              title={`Ubicación ${site.name}`}
+              src={site.contact.mapEmbedUrl}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -53,7 +54,8 @@ export default function Footer() {
               <a
                 className="linksFooter"
                 target="_blank"
-                href="https://www.instagram.com/fiorilli.jrfarmacia/"
+                rel="noopener noreferrer"
+                href={site.social.instagram}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +71,8 @@ export default function Footer() {
               <a
                 className="linksFooter"
                 target="_blank"
-                href="https://www.facebook.com/fiorilli.jrfarmacia"
+                rel="noopener noreferrer"
+                href={site.social.facebook}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,8 +87,9 @@ export default function Footer() {
               </a>
               <a
                 className="linksFooter"
-                href="https://www.linkedin.com/in/farmacia-fiorilli-jr-70842697/"
+                href={site.social.linkedin}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,30 +108,30 @@ export default function Footer() {
           <div className="footer-legal-info">
             <h4>Información institucional</h4>
             <p>
-              <strong>Directora Técnica:</strong> Monica Beatriz Fiorilli
+              <strong>Directora Técnica:</strong> {site.legal.technicalDirector}
             </p>
             <p>
-              <strong>Gerente:</strong> Raúl Alejandro Jacquet
+              <strong>Gerente:</strong> {site.legal.manager}
             </p>
             <p>
-              <strong>Razón Social:</strong> FIORILLI MONICA BEATRIZ
+              <strong>Razón Social:</strong> {site.legal.businessName}
             </p>
             <p>
-              <strong>CUIT:</strong> 23-18298071-4
+              <strong>CUIT:</strong> {site.legal.cuit}
             </p>
           </div>
         </div>
 
         <div className="footer-bottom">
           <small>
-            © Copyright 2026 Farmacia Fiorilli JR - Todos los derechos
+            © Copyright 2026 {site.name} - Todos los derechos
             reservados
           </small>
           <small>
             <a
               href="https://dblock.com.ar/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Desarrollado por @DBLOCK
             </a>

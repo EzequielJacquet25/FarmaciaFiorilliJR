@@ -11,9 +11,10 @@ export default function CategoryFilter({
       type="button"
       className={`category-filter ${active ? "category-filter-active" : ""}`}
       onClick={onClick}
+      aria-pressed={active}
     >
       <span>{label}</span>
-      <span className="material-symbols-outlined category-filter-icon">
+      <span className="material-symbols-outlined category-filter-icon" aria-hidden="true">
         {icon}
       </span>
     </button>

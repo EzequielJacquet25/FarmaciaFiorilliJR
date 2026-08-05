@@ -21,7 +21,7 @@
 
 .product-card-image {
   width: 100%;
-min-height: 700px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
 }

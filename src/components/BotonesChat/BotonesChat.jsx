@@ -1,23 +1,24 @@
 import "./BotonesChat.css";
+import { site } from "../../data/site";
 const BotonesChat = () => {
   return (
     <>
       {/* Botón WhatsApp */}
       <a
-        href="https://wa.me/5491127490223"
+        href={site.contact.whatsappUrl}
         className="float-button whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
-          alt="WhatsApp Fiorilli JR"
+          alt={`WhatsApp ${site.name}`}
         />
       </a>
 
       {/* Botón Instagram */}
       <a
-        href="https://www.instagram.com/fiorilli.jrfarmacia/"
+        href={site.social.instagram}
         className="float-button instagram-float"
         target="_blank"
         rel="noopener noreferrer"
