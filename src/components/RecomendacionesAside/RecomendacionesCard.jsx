@@ -1,4 +1,4 @@
-import "./RecomenadiconesCard.css";
+import "../Recomendaciones/Recomendaciones.css";
 export default function RecommendationCard({ alt, title, description, link }) {
   const imagen = `/JPG/${title.trim().replace(/\s+/g, "")}/1.jpg`;
   return (

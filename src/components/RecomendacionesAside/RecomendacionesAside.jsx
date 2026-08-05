@@ -9,15 +9,14 @@ export default function RecomendacionesAside({ productosR }) {
 
         <div className="recommendations-aside-list">
           {productosR.map((item) => (
-            <div key={item.nombre}>
-              <RecomendacionesCard
-                image={item.img}
-                alt={item.nombre}
-                title={item.nombre}
-                description={item.compo}
-                link={item.nombre}
-              />
-            </div>
+            <RecomendacionesCard
+              key={item.nombre}
+              image={item.img}
+              alt={item.nombre}
+              title={item.nombre}
+              description={item.compo}
+              link={item.nombre}
+            />
           ))}
         </div>
       </div>

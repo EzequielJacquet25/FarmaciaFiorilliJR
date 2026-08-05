@@ -27,6 +27,7 @@
   border: 1px solid rgba(120, 130, 125, 0.2);
   border-radius: 1.5rem;
   padding: 1.25rem;
+  text-align: center;
   transition: border-color 0.3s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
 }
@@ -62,7 +63,8 @@
 }
 
 .recommendation-aside-card-link {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.25rem;
   font-size: 0.8rem;

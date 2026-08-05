@@ -8,7 +8,11 @@
 .recommendations-aside-sticky {
   position: sticky;
   top: 100px; /* separación del header */
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #ffffff;
   border-radius: 1.5rem;
   padding: 1.5rem;
@@ -28,9 +32,10 @@
 
 /* LISTA */
 .recommendations-aside-list{
+  width: 100%;
 overflow: hidden;
 display: flex;
-flex-direction: row ;
+flex-direction: column ;
 justify-content: center;
 align-items: center;
 }
@@ -47,7 +52,7 @@ align-items: center;
     max-width: 260px;
   }
 .recommendations-aside-list{
-display: flex;
+display: flex !important;
 flex-direction: column !important;
 }
   .recommendations-aside-sticky {
@@ -55,7 +60,6 @@ flex-direction: column !important;
   }
   .recommendation-aside-card{
   flex: 0 0 auto;
-  width: 80%;
   max-width: 200px;
 }
 }
