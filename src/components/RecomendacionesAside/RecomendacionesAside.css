@@ -40,9 +40,23 @@ justify-content: center;
 align-items: center;
 }
 .recommendation-aside-card{
-  flex: 0 0 auto;
-  width: 100%;
+  flex: 0 0 200px;
+  width: 200px;
   max-width: 200px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation-aside-card-description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.recommendation-aside-card-link {
+  margin-top: auto;
 }
 /* ========================= */
 /* 📱 TABLET */
@@ -59,9 +73,10 @@ flex-direction: column !important;
     padding: 1.2rem;
   }
   .recommendation-aside-card{
-  flex: 0 0 auto;
-  max-width: 200px;
-}
+    flex-basis: 200px;
+    width: 200px;
+    max-width: 200px;
+  }
 }
 
 /* ========================= */
@@ -100,8 +115,9 @@ flex-direction: column !important;
     border-radius: 10px;
   }
   .recommendation-aside-card{
-  flex: 0 0 auto;
-  width: 250px;
-  
-}
-}
+    flex-basis: 250px;
+    width: 250px;
+    max-width: 250px;
+    height: 420px;
+  }
+} 
