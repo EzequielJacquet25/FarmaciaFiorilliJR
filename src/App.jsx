@@ -1,6 +1,8 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
+import AnalyticsConsent from "./components/AnalyticsConsent/AnalyticsConsent";
+import { initializeAnalytics, trackPageView } from "./services/analyticsService";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import BotonesChat from "./components/BotonesChat/BotonesChat";
@@ -24,6 +26,9 @@ function App() {
       behavior: "smooth",
     });
   }, []);
+  useEffect(() => { initializeAnalytics(); }, []);
+  const location = useLocation();
+  useEffect(() => { trackPageView(location.pathname); }, [location.pathname]);
   return (
     <div className="app-shell">
       <Header></Header>
@@ -47,6 +52,7 @@ function App() {
       </Suspense>
       <BotonesChat></BotonesChat>
       <Footer></Footer>
+      <AnalyticsConsent />
     </div>
   );
 }

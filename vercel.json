@@ -1,4 +1,7 @@
 {
+  "crons": [
+    { "path": "/api/internal/reports/monthly-analytics", "schedule": "0 12 1 * *" }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

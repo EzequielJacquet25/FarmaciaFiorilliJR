@@ -1,6 +1,7 @@
 import Button from "../Button/Button";
 import "./ProductCard.css";
 import { useNavigate } from "react-router-dom";
+import { trackProductClick } from "../../services/analyticsService";
 export default function ProductCard({
   image,
   category,
@@ -46,7 +47,7 @@ export default function ProductCard({
         ) : (
           <span className="product-card-details">Venta Libre</span>
         )}
-        <Button variant="primary" onClick={() => navigate(`/item/${title}`)}>
+        <Button variant="primary" onClick={() => { trackProductClick({ nombre: title, categoria: category }); navigate(`/item/${title}`); }}>
           Ver Detalles
         </Button>
       </div>

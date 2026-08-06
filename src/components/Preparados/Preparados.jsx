@@ -4,7 +4,6 @@ import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
 import imgPreparados from "../../assets/imagen-faq.png";
 import Videos from "../Video/Videos";
-import { site } from "../../data/site";
 import "./Preparados.css";
 import { useEffect, useState } from "react";
 
@@ -36,7 +35,7 @@ const processSteps = [
   },
 ];
 
-const webOrderSteps = [
+const _webOrderSteps = [
   {
     icon: "chat",
     title: "1. Iniciá tu consulta",

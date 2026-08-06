@@ -1,0 +1,5 @@
+.analytics-consent { position: fixed; z-index: 100; right: 1rem; bottom: 1rem; max-width: 380px; padding: 1rem; border: 1px solid #cde7d5; border-radius: 1rem; background: #fff; box-shadow: 0 16px 36px rgba(24,53,35,.18); color: #27332b; }
+.analytics-consent p { margin: 0 0 .9rem; line-height: 1.5; }
+.analytics-consent div { display: flex; justify-content: flex-end; gap: .5rem; }
+.analytics-consent button { padding: .6rem .85rem; border: 1px solid #1b7f3f; border-radius: .6rem; background: #fff; color: #176a35; font-weight: 700; cursor: pointer; }
+.analytics-consent button:last-child { background: #1b7f3f; color: #fff; }

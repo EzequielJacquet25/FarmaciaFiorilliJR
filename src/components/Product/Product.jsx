@@ -8,6 +8,7 @@ import { useEffect, useMemo } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Videos from "../Video/Videos";
 import { site } from "../../data/site";
+import { trackContactClick, trackProductView } from "../../services/analyticsService";
 
 // dejá tu array products acá igual que lo tenés
 
@@ -41,6 +42,8 @@ export default function Product({ products }) {
 
   const slug = producto ? crearSlugImagen(producto.nombre) : "";
   const imagePath = `/JPG/${slug}/1.jpg`;
+
+  useEffect(() => { if (producto) trackProductView(producto); }, [producto]);
 
   const articulosRelacionados = useMemo(() => {
     if (!producto) return [];
@@ -234,6 +237,7 @@ export default function Product({ products }) {
                     href={`${site.contact.whatsappUrl}?text=${encodeURIComponent(mensaje)}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackContactClick("whatsapp_click")}
                   >
                     Preguntar Por el Preparado
                   </a>

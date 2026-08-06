@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import { products } from "./data/products";
 
 const renderAt = (path) => {
   window.history.pushState({}, "", path);
@@ -29,7 +30,9 @@ describe("rutas principales", () => {
     expect(
       await screen.findByRole("heading", { name: "Catálogo de Preparados" }),
     ).toBeInTheDocument();
-    expect(screen.getByText("40 preparados disponibles en Todos.")).toBeInTheDocument();
+    expect(
+      screen.getByText(`${products.length} preparados disponibles en Todos.`),
+    ).toBeInTheDocument();
   });
 
   it("resuelve una ficha de producto", async () => {
