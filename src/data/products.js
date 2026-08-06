@@ -691,7 +691,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
       "Mejora la apariencia del cabello dejándolo fuerte, suave y con brillo natural.",
     ],
     receta: false,
-    video: true,
+    video: false,
   },
   {
     categoria: "Suplementos",
