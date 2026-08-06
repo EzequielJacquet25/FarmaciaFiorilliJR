@@ -13,6 +13,9 @@ const Product = lazy(() => import("./components/Product/Product"));
 const NotFound = lazy(() => import("./components/NotFound/NotFound"));
 const Recomendaciones = lazy(() => import("./components/Recomendaciones/Recomendaciones"));
 const Especialidades = lazy(() => import("./components/Especialidades/Especialidades"));
+const PedidoDePreparado = lazy(
+  () => import("./components/PedidoDePreparado/PedidoDePreparado"),
+);
 
 function App() {
   useEffect(() => {
@@ -37,6 +40,7 @@ function App() {
           <Route path="/quienesSomos" element={<QuienesSomos />} />
           <Route path="/preparados" element={<Preparados products={products} />} />
           <Route path="/especialidades" element={<Especialidades />} />
+          <Route path="/pedido-de-preparado" element={<PedidoDePreparado />} />
           <Route path="/item/:name" element={<Product products={products} />} />
           <Route path="/FAQ" element={<Recomendaciones />} />
         </Routes>

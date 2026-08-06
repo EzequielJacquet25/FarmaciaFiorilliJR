@@ -76,7 +76,63 @@
   color: #176a35;
 }
 
-@media (min-width: 750px) {
+.header-link-featured,
+.header-link-featured:hover,
+.header-link-featured.header-link-active {
+  position: relative;
+  overflow: hidden;
+  background: #1b7f3f;
+  color: #ffffff;
+  box-shadow: 0 0 0 1px rgba(110, 211, 154, 0.45),
+    0 0 14px rgba(34, 166, 82, 0.65), 0 0 28px rgba(110, 211, 154, 0.4);
+  animation: pedido-glow 2.2s ease-in-out infinite;
+}
+
+.header-link-featured::after {
+  position: absolute;
+  top: -60%;
+  left: -35%;
+  width: 28%;
+  height: 220%;
+  background: rgba(255, 255, 255, 0.45);
+  content: "";
+  transform: rotate(24deg);
+  animation: pedido-shine 3.6s ease-in-out infinite;
+}
+
+@keyframes pedido-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 1px rgba(110, 211, 154, 0.35),
+      0 0 10px rgba(34, 166, 82, 0.45), 0 0 20px rgba(110, 211, 154, 0.25);
+  }
+
+  50% {
+    box-shadow: 0 0 0 2px rgba(172, 255, 201, 0.78),
+      0 0 20px rgba(34, 166, 82, 0.82), 0 0 38px rgba(110, 211, 154, 0.6);
+  }
+}
+
+@keyframes pedido-shine {
+  0%,
+  55% {
+    left: -35%;
+  }
+
+  78%,
+  100% {
+    left: 125%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-link-featured,
+  .header-link-featured::after {
+    animation: none;
+  }
+}
+
+@media (min-width: 1100px) {
   .header-nav {
     padding-inline: 1.5rem;
   }
@@ -94,5 +150,11 @@
     background: transparent;
     border: 0;
     box-shadow: none;
+  }
+
+  .header-link-featured {
+    order: 0;
+    margin-inline: 0.25rem;
+    padding-inline: 1rem;
   }
 }

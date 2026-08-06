@@ -5,6 +5,7 @@ import { site } from "../../data/site";
 import "./Header.css";
 
 const navigationItems = [
+  { to: "/pedido-de-preparado", label: "Pedido Online", featured: true },
   { to: "/", label: "Inicio", end: true },
   { to: "/preparados", label: "Preparados" },
   { to: "/quienesSomos", label: "Quiénes somos" },
@@ -42,13 +43,15 @@ export default function Header() {
           id="primary-navigation"
           className={`header-links ${isMenuOpen ? "header-links-open" : ""}`}
         >
-          {navigationItems.map(({ to, label, end }) => (
+          {navigationItems.map(({ to, label, end, featured }) => (
             <NavLink
               key={to}
               to={to}
               end={end}
               className={({ isActive }) =>
-                `header-link${isActive ? " header-link-active" : ""}`
+                `header-link${featured ? " header-link-featured" : ""}${
+                  isActive ? " header-link-active" : ""
+                }`
               }
               onClick={closeMenu}
             >

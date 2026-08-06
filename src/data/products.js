@@ -279,8 +279,8 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Rp/ ext. fluido BOLDO 2%  ext fluido Zanahoria 1 % ;Tint  CARQUEJA 20% Tint   ALCACHOFA 40%  gotas csp 60 ml ( USO INTERNO)",
-    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua  `,
-    recomendaciones: `La dosis habitual para adultos es  30-40 gotas cerca de las comidas principales y para niño se recomienda 15 a 20 gotas  , administrar 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños. Preparado de uso interno `,
+    uso: `Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
+    recomendaciones: `La dosis habitual para adultos es 30-40 gotas administras 2 o 3 veces por día diluidas en medio vaso de  agua , no es recomendable el excederse con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños Preparado de uso interno.`,
     beneficios: [
       "Ayuda a reducir la sensación de 'hinchazón' o pesadez estomacal , especialmente después de comidas ",
       "Estimula la producción de bilis en el hígado y facilita la digestión de las grasas ",
@@ -295,8 +295,8 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     nombre: "Gotas Antioxidantes",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo: "Tintura de CARDO MARIANO csp para 60 ml ",
-    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua `,
-    recomendaciones: `La dosis habitual para adultos es  30-40 gotas administras 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada  Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños  Preparado de uso interno.
+    uso: `Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
+    recomendaciones: `La dosis habitual para adultos es 30-40 gotas administras 2 o 3 veces por día diluidas en medio vaso de  agua , no es recomendable el excederse con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños Preparado de uso interno.
 `,
     beneficios: [
       "Acción antioxidante ayudando a prevenir  el deterioro celular  y la formación de radicales libres  ",
@@ -313,8 +313,8 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "RP/ Tintura de Castaño de las Indias 25% , Tintura de Hamamelis 25% ; Tintura de centella Asiatica 25 %c ; Tintura de Ginko Biloba 25% csp para 60 ml ",
-    uso: ` Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua `,
-    recomendaciones: `La dosis habitual para adultos es  30-40 gotas administras 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada  Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños  Preparado de uso interno.
+    uso: ` Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
+    recomendaciones: `La dosis habitual para adultos es 30-40 gotas administras 2 o 3 veces por día diluidas en medio vaso de  agua , no es recomendable el excederse con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños Preparado de uso interno.
 
 `,
     beneficios: [
@@ -332,8 +332,8 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Tintura de Tilo 25% ; Tintura de Melisa 25% ;  Tintura de Pasiflora ; Titura de Valeriana 25% csp para 60 ml  ",
-    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua `,
-    recomendaciones: `La dosis habitual para adultos es  30-40 gotas administras 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños  Preparado de uso interno.`,
+    uso: `Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
+    recomendaciones: `La dosis habitual para adultos es 30-40 gotas administras 2 o 3 veces por día diluidas en medio vaso de  agua , no es recomendable el excederse con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños Preparado de uso interno.`,
     beneficios: [
       "Ayudan a la conciliación del sueño profundo durante la noche ",
       "Alivian la ansiedad, estrés y el insomnio diario  ",
@@ -349,14 +349,31 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Tintura de  Echinacea 50% ; Tintura de uña de gato 50%c csp para 60 ml ",
-    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua `,
-    recomendaciones: `La dosis habitual para adultos es  30-40 gotas administras 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños Preparado de uso interno.
+    uso: `Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
+    recomendaciones: `La dosis habitual para adultos es 30-40 gotas administras 2 o 3 veces por día diluidas en medio vaso de  agua , no es recomendable el excederse con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños Preparado de uso interno.
 `,
     beneficios: [
       "Estimulan la producción de inmunoglobulinas , ayudando al cuerpo a Refuerzo de las defensas naturales ",
       "Prevención de infecciones respiratorias como faringitis, amigdalitis, rinitis, otitis y bronquitis.",
       "Ayudan a disminuir la intensidad y duración de enfermedades, siendo útiles en épocas de estrés, fatiga o cambios estacionales.",
       "Facilitan una respuesta inmunológica más equilibrada, especialmente en niños con problemas respiratorios crónicos o personas con defensas bajas",
+    ],
+    receta: false,
+    video: false,
+  },
+  {
+    categoria: "Productos de origen natural",
+    nombre: "Tisana Mix Antiacida",
+    img: ["1.jpg", "2.jpg", "3.jpg"],
+    compo:
+      "Rp/Manzanilla 40%; Congorosa 20% ;Echinasea 20% ;Menta Hojas 20% cps 25g",
+    uso: `Tomar una cantidad de la mezcla herbal ( 1 cuchara de té) y agréguele agua hirviendo y dejar reposar por 10 /15 min , consumir 3 a 4 veces por día`,
+    recomendaciones: `-`,
+    beneficios: [
+      "Alivia la acidez o el ardor estomacal leve.",
+      "Favorece la digestión .",
+      "Reduce los gases, distensión abdominal y espasmos digestivos",
+      "Aporta un efecto calmante sobre el aparato digestivo.",
     ],
     receta: false,
     video: false,
@@ -656,6 +673,22 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
       "Mejora la asimilación del hierro proveniente de los alimentos, previniendo la anemia",
       "Tienen un efecto antioxidante que previene del deterioro celular",
       "Es esencial para la reparación de tejidos, curación de heridas y el mantenimiento de huesos y dientes.",
+    ],
+    receta: false,
+    video: true,
+  },
+  {
+    categoria: "Suplementos",
+    nombre: "Cápsulas Anticaida del Pelo",
+    img: ["1.jpg", "2.jpg", "3.jpg"],
+    compo: "Rp/ Zing gluconato 28 mg ; Cistina L 300 mg ; Biotina 2 mg ; Calcio Panteonato 25 mg; Vitamina B6  2 mg csp para 25 caps  ",
+    uso: "La dosis indicada es de 1 cápsula por día, según la indicación médica. Estas capsulas se pueden tomar en cualquier momento del día según los requerimientos personales.",
+    recomendaciones: `Las cápsulas deben guardarse en un lugar seco, fresco y alejado de la luz solar directa. La humedad y el calor pueden alterar la estructura de la cápsula o degradar el principio activo, se recomienda conservarlas entre 15 °C y 25 °C, a menos que el envase indique lo contrario. Mantener las cápsulas siempre en su envase original, bien cerrado, para evitar contaminación, exposición al aire o confusión con otros medicamentos. Es importante no tocar las cápsulas con las manos sucias o mojadas, ya que la humedad puede dañarlas. Deben mantenerse fuera del alcance de los niños: para evitar ingestas accidentales.`,
+    beneficios: [
+      "Acelera el crecimiento del cabello y las uñas, estimulando un crecimiento más rápido y sano.",
+      "Fortalece las fibras capilares, nutre y fortalece desde la raíz, reduciendo la caída y la ruptura",
+      "Previene la caída y el deterioro del pelo.",
+      "Mejora la apariencia del cabello dejándolo fuerte, suave y con brillo natural.",
     ],
     receta: false,
     video: true,
