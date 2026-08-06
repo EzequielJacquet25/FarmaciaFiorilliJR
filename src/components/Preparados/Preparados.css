@@ -173,7 +173,6 @@ color: #22a652;
 /* PROCESS */
 .preparados-process-section {
   margin-top: 6rem;
-
 }
 
 .preparados-process-box {
@@ -210,6 +209,48 @@ color: #22a652;
   height: 2px;
   background: rgba(95, 107, 112, 0.22);
   z-index: 1;
+}
+
+.preparados-web-process-section {
+  margin-top: 4rem;
+}
+
+.preparados-web-process-box {
+  position: relative;
+  overflow: hidden;
+  padding: 2.5rem 1rem;
+  border: 1px solid rgba(27, 127, 63, 0.12);
+  border-radius: 3rem;
+  background:
+    radial-gradient(circle at top right, rgba(110, 211, 154, 0.24), transparent 36%),
+    #ffffff;
+}
+
+.preparados-web-process-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.preparados-web-process-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.9rem;
+  background: #1b7f3f;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.preparados-web-process-button:hover {
+  background: #176a35;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
 /* RESPONSIVE */
@@ -253,6 +294,10 @@ color: #22a652;
   .preparados-process-line {
     display: none;
   }
+
+  .preparados-web-process-box {
+    border-radius: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -276,6 +321,14 @@ color: #22a652;
   .preparados-process-box {
     padding: 2rem 1.25rem;
     border-radius: 2rem;
+  }
+
+  .preparados-web-process-box {
+    padding: 2rem 1.25rem;
+  }
+
+  .preparados-web-process-button {
+    width: 100%;
   }
 
   .preparados-process-grid {

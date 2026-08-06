@@ -7,6 +7,7 @@ import menopausia from "../../assets/menopausia.jpg";
 import fertilidad from "../../assets/fertilidad.jpg";
 
 import imgEspecialidades from "../../assets/especialidades.png";
+import "../Hero/Hero.css";
 import "./Especialidades.css";
 import { useEffect } from "react";
 /*

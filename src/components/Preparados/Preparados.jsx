@@ -4,6 +4,7 @@ import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
 import imgPreparados from "../../assets/imagen-faq.png";
 import Videos from "../Video/Videos";
+import { site } from "../../data/site";
 import "./Preparados.css";
 import { useEffect, useState } from "react";
 
@@ -32,6 +33,34 @@ const processSteps = [
     icon: "hand_package",
     title: "5. Entrega",
     text: "Reciba su preparado magistral en la farmacia con total seguridad.",
+  },
+];
+
+const webOrderSteps = [
+  {
+    icon: "chat",
+    title: "1. Iniciá tu consulta",
+    text: "Escribinos por WhatsApp y contanos qué preparado necesitás o qué indicación recibiste.",
+  },
+  {
+    icon: "upload_file",
+    title: "2. Enviá la receta",
+    text: "Mandanos una foto legible de la receta médica para que podamos revisarla.",
+  },
+  {
+    icon: "request_quote",
+    title: "3. Recibí la cotización",
+    text: "Te enviamos un presupuesto detallado y la información necesaria para continuar.",
+  },
+  {
+    icon: "verified",
+    title: "4. Confirmación profesional",
+    text: "Validamos la receta y confirmamos el inicio de la elaboración de tu preparado.",
+  },
+  {
+    icon: "notifications_active",
+    title: "5. Te avisamos",
+    text: "Cuando esté listo, nos comunicamos con vos para coordinar el retiro en la farmacia.",
   },
 ];
 

@@ -121,3 +121,46 @@ flex-direction: column !important;
     height: 420px;
   }
 } 
+
+/* Estilos propios del contenedor de recomendaciones. */
+.recommendations-aside {
+  padding-top: 3rem;
+}
+
+.recommendations-aside-sticky {
+  top: 7rem;
+}
+
+.recommendations-aside-title {
+  margin: 0 0 2rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--primary, #1f4f3f);
+  letter-spacing: -0.02em;
+}
+
+.recommendations-aside-list {
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .recommendations-aside {
+    padding-top: 2rem;
+  }
+
+  .recommendations-aside-sticky {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .recommendations-aside-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .recommendations-aside-list {
+    gap: 1rem;
+  }
+}

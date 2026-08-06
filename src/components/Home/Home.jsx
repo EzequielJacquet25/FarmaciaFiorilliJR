@@ -1,3 +1,4 @@
+import "../Hero/Hero.css";
 import "./Home.css";
 import imgHome from "../../assets/imagen-home.png";
 import imgHome1 from "../../assets/AMFFA-OS.png";

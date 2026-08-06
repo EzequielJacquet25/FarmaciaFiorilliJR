@@ -1,4 +1,4 @@
-import "./Recomendaciones.css";
+import "../Hero/Hero.css";
 import imgFAQ from "../../assets/imagen-faq.png";
 import FAQSection from "../FAQSection/FAQSection";
 import { useEffect } from "react";
