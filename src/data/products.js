@@ -279,7 +279,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Rp/ ext. fluido BOLDO 2%  ext fluido Zanahoria 1 % ;Tint  CARQUEJA 20% Tint   ALCACHOFA 40%  gotas csp 60 ml ( USO INTERNO)",
-    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en un vaso de agua  `,
+    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua  `,
     recomendaciones: `La dosis habitual para adultos es  30-40 gotas cerca de las comidas principales y para niño se recomienda 15 a 20 gotas  , administrar 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños. Preparado de uso interno `,
     beneficios: [
       "Ayuda a reducir la sensación de 'hinchazón' o pesadez estomacal , especialmente después de comidas ",
@@ -295,7 +295,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     nombre: "Gotas Antioxidantes",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo: "Tintura de CARDO MARIANO csp para 60 ml ",
-    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en un vaso de agua `,
+    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua `,
     recomendaciones: `La dosis habitual para adultos es  30-40 gotas administras 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada  Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños  Preparado de uso interno.
 `,
     beneficios: [
@@ -313,7 +313,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "RP/ Tintura de Castaño de las Indias 25% , Tintura de Hamamelis 25% ; Tintura de centella Asiatica 25 %c ; Tintura de Ginko Biloba 25% csp para 60 ml ",
-    uso: ` Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en un vaso de agua `,
+    uso: ` Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua `,
     recomendaciones: `La dosis habitual para adultos es  30-40 gotas administras 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada  Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños  Preparado de uso interno.
 
 `,
@@ -332,7 +332,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Tintura de Tilo 25% ; Tintura de Melisa 25% ;  Tintura de Pasiflora ; Titura de Valeriana 25% csp para 60 ml  ",
-    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en un vaso de agua `,
+    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua `,
     recomendaciones: `La dosis habitual para adultos es  30-40 gotas administras 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños  Preparado de uso interno.`,
     beneficios: [
       "Ayudan a la conciliación del sueño profundo durante la noche ",
@@ -349,7 +349,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Tintura de  Echinacea 50% ; Tintura de uña de gato 50%c csp para 60 ml ",
-    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en un vaso de agua `,
+    uso: `Antes de usar se deben agitar  , este preparado se puede administrar de forma sublingual o diluido en medio vaso de agua `,
     recomendaciones: `La dosis habitual para adultos es  30-40 gotas administras 2 o 3 veces por día , no es recomendable el excederse  con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños Preparado de uso interno.
 `,
     beneficios: [
