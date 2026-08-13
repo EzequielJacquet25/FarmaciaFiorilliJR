@@ -94,6 +94,33 @@ export default function PedidoDePreparado() {
         </div>
       </section>
 
+      <section className="pedido-video-section" aria-labelledby="pedido-video-title">
+        <div className="pedido-container pedido-video-grid">
+          <div className="pedido-video-copy">
+            <span className="pedido-eyebrow">Guía rápida</span>
+            <h2 id="pedido-video-title">Mirá cómo hacer tu pedido por WhatsApp</h2>
+            <p>
+              En menos de un minuto conocé los pasos, desde el envío de la
+              receta —si corresponde— hasta el aviso para retirar tu preparado.
+            </p>
+          </div>
+
+          <video
+            className="pedido-video"
+            autoPlay
+            controls
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            aria-label="Video explicativo sobre cómo pedir un preparado por WhatsApp"
+          >
+            <source src="/videos/pedido-preparado-whatsapp.mp4" type="video/mp4" />
+            Tu navegador no soporta el formato de video.
+          </video>
+        </div>
+      </section>
+
       <section className="pedido-help-section">
         <div className="pedido-container pedido-help-card">
           <div>

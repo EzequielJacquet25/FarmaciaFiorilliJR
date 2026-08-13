@@ -133,6 +133,38 @@ export const products = [
   },
   {
     categoria: "Skin Care",
+    nombre: "Serum Noche",
+    img: ["1.jpg", "2.jpg", "3.jpg"],
+    compo: "Rp/Retinol 0,20 % ; Sérum c.s.p. 30 g",
+    uso: "Utilizar únicamente por la noche. Limpiar el rostro con agua micelar o un limpiador suave y secar completamente la piel. Aplicar 2 o 3 gotas del sérum, evitando el contorno de los ojos, los labios y las mucosas. Distribuir mediante movimientos suaves y dejar absorber antes de aplicar una crema hidratante. Comenzar utilizándolo 2 o 3 noches por semana. Si la piel presenta buena tolerancia, aumentar gradualmente la frecuencia de aplicación según la tolerancia de la piel.",
+    recomendaciones: `No combinar en la misma rutina con otros productos que contengan retinol u otros retinoides. No exceder la cantidad ni la frecuencia recomendadas y evitar su aplicación sobre heridas, quemaduras, cortes o piel irritada. Durante el día, se debe  utilizar protector solar.  Los resultados son progresivos y pueden comenzar a observarse después de 3 o 4 meses de uso constante. Si se presenta irritación intensa, enrojecimiento persistente o ardor, suspender el uso y consultar a un profesional de la salud. No utilizar durante el embarazo ni si se está planificando un embarazo; durante la lactancia, consultar previamente con un profesional. Conservar el producto bien cerrado, en un lugar fresco, seco y protegido de la luz y el calor. Mantener fuera del alcance de los niños. Preparado exclusivamente para uso externo`,
+    beneficios: [
+      "Antiedad: Estimula la renovación celular y la producción de colágeno, mejorando líneas finas, firmeza y elasticidad.",
+      "Acné y poros: Ayuda a regular la oleosidad, destapar los poros y prevenir nuevas imperfecciones.",
+      "Manchas: Favorece un tono más uniforme y ayuda a aclarar progresivamente las manchas.",
+      "Textura e hidratación: Fortalece la barrera cutánea y deja la piel más lisa, hidratada y saludable.",
+    ],
+    receta: false,
+    video: false,
+  },
+  {
+    categoria: "Skin Care",
+    nombre: "Serum con Vitamina C",
+    img: ["1.jpg", "2.jpg", "3.jpg"],
+    compo: "Rp/Ácido L-ascórbico 10%Sérum c.s.p. 30 g",
+    uso: "Puede utilizarse durante la rutina diurna o nocturna, aunque se recomienda preferentemente por la mañana debido a su acción antioxidante. Limpiar y secar la piel antes de la aplicación. Colocar 2 o 3 gotas sobre el rostro y distribuir mediante movimientos suaves y circulares, evitando el contacto con los ojos y las mucosas. Dejar que se absorba antes de aplicar una crema hidratante. Finalizar siempre la rutina diurna con protector solar.",
+    recomendaciones: `No exceder la cantidad ni la frecuencia recomendadas. Evitar su aplicación sobre heridas, quemaduras, cortes o piel irritada. En pieles sensibles, comenzar utilizándolo en días alternos. Si también se utiliza el Sérum Noche con retinol, aplicar el sérum con vitamina C por la mañana y el retinol por la noche. En caso de irritación intensa, enrojecimiento persistente o ardor, suspender el uso y consultar a un profesional de la salud. La vitamina C complementa la protección antioxidante, pero no reemplaza el protector solar. Conservar el producto bien cerrado, en un lugar fresco, seco y protegido de la luz y el calor. No utilizar si adquiere una coloración naranja oscura o marrón. Mantener fuera del alcance de los niños. Preparado exclusivamente para uso externo.`,
+    beneficios: [
+      "Antioxidante: ayuda a neutralizar los radicales libres responsables del envejecimiento prematuro de la piel.",
+      "Estimula el colágeno: favorece la producción de colágeno, contribuyendo a mejorar la firmeza y la elasticidad.",
+      "Ayuda a reducir manchas: interviene en la formación de melanina y ayuda a disminuir progresivamente la apariencia de manchas y zonas oscurecidas.",
+      "Ilumina y unifica el tono: aporta luminosidad y contribuye a que la piel se vea más uniforme y revitalizada.",
+    ],
+    receta: false,
+    video: false,
+  },
+  {
+    categoria: "Skin Care",
     nombre: "Tónico Facial",
     img: ["1.jpg", "2.jpg", "3.jpg"],
     compo:

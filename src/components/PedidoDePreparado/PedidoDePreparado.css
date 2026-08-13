@@ -115,6 +115,47 @@
   padding: 5.5rem 0;
 }
 
+.pedido-video-section {
+  padding: 0 0 5.5rem;
+}
+
+.pedido-video-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  align-items: center;
+  gap: clamp(2rem, 7vw, 6rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 2rem;
+  background: #e5f4e9;
+}
+
+.pedido-video-copy h2 {
+  max-width: 650px;
+  margin: 0;
+  color: #173d29;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.pedido-video-copy p {
+  max-width: 630px;
+  margin: 1rem 0 0;
+  color: #52635a;
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.pedido-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 1px solid rgba(23, 61, 41, 0.15);
+  border-radius: 1.5rem;
+  background: #173d29;
+  box-shadow: 0 24px 50px rgba(23, 61, 41, 0.18);
+}
+
 .pedido-help-card h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
@@ -182,7 +223,8 @@
 
 @media (max-width: 850px) {
   .pedido-hero-grid,
-  .pedido-process-grid {
+  .pedido-process-grid,
+  .pedido-video-grid {
     grid-template-columns: 1fr;
   }
 

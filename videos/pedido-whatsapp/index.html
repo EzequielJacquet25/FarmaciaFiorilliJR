@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Cómo pedir un preparado por WhatsApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #f8fafa; }
+      body { font-family: Inter, Arial, sans-serif; color: #173d29; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+      .clip { position: absolute; inset: 0; overflow: hidden; }
+      .scene { display: flex; min-height: 100%; flex-direction: column; justify-content: space-between; padding: 140px 82px 160px; }
+      .backdrop { position: absolute; inset: 0; background: radial-gradient(circle at 90% 9%, #d8f1df 0, transparent 31%), linear-gradient(160deg, #f8fafa 0%, #e5f4e9 100%); }
+      .brand { position: relative; display: flex; align-items: center; gap: 16px; color: #176a35; font-size: 28px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+      .brand-dot { width: 20px; height: 20px; border-radius: 50%; background: #176a35; }
+      .step { position: relative; color: #176a35; font-size: 28px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+      h1 { position: relative; max-width: 840px; margin: 0; font-size: 101px; line-height: 1.02; letter-spacing: -5px; }
+      h1 strong { color: #176a35; }
+      .lead { position: relative; max-width: 760px; margin: 32px 0 0; color: #50635a; font-size: 38px; line-height: 1.35; }
+      .card { position: relative; border: 2px solid rgba(23, 61, 41, .14); border-radius: 42px; background: rgba(255,255,255,.92); box-shadow: 0 30px 60px rgba(23,61,41,.12); }
+      .chat { padding: 40px; }
+      .chat-head { display: flex; align-items: center; gap: 22px; font-size: 31px; font-weight: 800; }
+      .chat-icon, .icon { display: grid; place-items: center; width: 74px; height: 74px; border-radius: 25px; background: #176a35; color: #fff; font-size: 42px; font-weight: 900; }
+      .bubble { margin-top: 34px; padding: 28px 30px; border-radius: 26px 26px 26px 7px; background: #e5f4e9; color: #173d29; font-size: 34px; line-height: 1.3; }
+      .cta { display: flex; align-items: center; justify-content: center; gap: 17px; margin-top: 28px; padding: 27px; border-radius: 25px; background: #176a35; color: #fff; font-size: 33px; font-weight: 800; }
+      .receipt { display: flex; align-items: center; gap: 30px; padding: 35px; }
+      .receipt-sheet { width: 190px; height: 240px; flex: 0 0 auto; padding: 38px 25px; border: 3px solid #176a35; border-radius: 18px; background: #fff; }
+      .receipt-line { height: 14px; margin-bottom: 18px; border-radius: 8px; background: #c6dfcc; }
+      .receipt-line.short { width: 65%; }
+      .receipt-copy { font-size: 37px; font-weight: 800; line-height: 1.2; }
+      .note { margin-top: 26px; color: #50635a; font-size: 28px; line-height: 1.35; }
+      .split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+      .mini { min-height: 365px; padding: 34px; }
+      .mini h2 { margin: 30px 0 16px; font-size: 42px; line-height: 1.08; }
+      .mini p { margin: 0; color: #50635a; font-size: 28px; line-height: 1.35; }
+      .badge { display: inline-flex; align-items: center; gap: 13px; margin-top: 32px; padding: 14px 19px; border-radius: 999px; background: #e5f4e9; color: #176a35; font-size: 25px; font-weight: 800; }
+      .lab { display: grid; place-items: center; min-height: 700px; }
+      .jar { position: relative; width: 360px; height: 470px; border: 12px solid #173d29; border-radius: 45px 45px 95px 95px; background: #fff; }
+      .jar:before { content: ""; position: absolute; top: -100px; left: 48px; width: 240px; height: 88px; border-radius: 22px; background: #176a35; }
+      .jar-label { position: absolute; right: 30px; bottom: 70px; left: 30px; padding: 32px 18px; border-radius: 18px; background: #e5f4e9; color: #173d29; font-size: 30px; font-weight: 900; text-align: center; }
+      .spark { position: absolute; width: 58px; height: 58px; border-radius: 50%; background: #b3e1c0; }
+      .spark.one { top: 190px; left: 60px; } .spark.two { right: 85px; bottom: 140px; width: 92px; height: 92px; background: #176a35; }
+      .ready { display: grid; place-items: center; min-height: 550px; }
+      .pickup-card { width: 100%; padding: 42px; border: 2px solid rgba(23, 61, 41, .14); border-radius: 42px; background: rgba(255,255,255,.94); box-shadow: 0 30px 60px rgba(23,61,41,.12); }
+      .pickup-head { display: flex; align-items: center; gap: 24px; }
+      .pickup-icon { display: grid; place-items: center; width: 90px; height: 90px; border-radius: 30px; background: #176a35; color: #fff; font-size: 47px; font-weight: 900; }
+      .pickup-head strong { display: block; font-size: 39px; line-height: 1.1; }
+      .pickup-head span { display: block; margin-top: 8px; color: #50635a; font-size: 27px; }
+      .pickup-divider { height: 2px; margin: 33px 0; background: #d8f1df; }
+      .pickup-status { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+      .pickup-status b { color: #173d29; font-size: 35px; }
+      .pickup-status em { padding: 14px 18px; border-radius: 999px; background: #e5f4e9; color: #176a35; font-size: 25px; font-style: normal; font-weight: 800; }
+      .notification { padding: 30px; font-size: 34px; font-weight: 800; text-align: center; }
+      .footer { position: relative; color: #50635a; font-size: 25px; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="pedido-whatsapp" data-start="0" data-duration="30" data-width="1080" data-height="1920">
+      <section id="scene-1" class="clip" data-start="0" data-duration="6" data-track-index="1"><div class="backdrop"></div><div class="scene"><div><div class="brand"><span class="brand-dot"></span> Farmacia Fiorilli JR</div><h1 id="s1-title">Tu preparado,<br /><strong>por WhatsApp.</strong></h1><p id="s1-lead" class="lead">Iniciá tu pedido de forma simple y acompañada.</p></div><div id="s1-chat" class="card chat"><div class="chat-head"><span class="chat-icon">↗</span> Nuevo mensaje</div><div class="bubble">Hola, quiero consultar por un preparado magistral.</div><div class="cta">● Iniciar por WhatsApp</div></div><div class="footer">Paso 1 de 5</div></div></section>
+      <section id="scene-2" class="clip" data-start="6" data-duration="6" data-track-index="1"><div class="backdrop"></div><div class="scene"><div><div class="step">Paso 2 de 5</div><h1 id="s2-title">Enviá tu<br /><strong>receta clara.</strong></h1><p id="s2-lead" class="lead">Si el preparado la requiere, mandanos una foto por el chat.</p></div><div id="s2-card" class="card receipt"><div class="receipt-sheet"><div class="receipt-line"></div><div class="receipt-line short"></div><div class="receipt-line"></div><div class="receipt-line short"></div></div><div><div class="receipt-copy">Receta recibida</div><div class="badge">✓ Imagen legible</div></div></div><p class="footer">Te indicaremos si necesitás acercar el original.</p></div></section>
+      <section id="scene-3" class="clip" data-start="12" data-duration="6" data-track-index="1"><div class="backdrop"></div><div class="scene"><div><div class="step">Paso 3 de 5</div><h1 id="s3-title">Cotización y<br /><strong>validación.</strong></h1><p id="s3-lead" class="lead">Revisamos la indicación y te compartimos el presupuesto.</p></div><div class="split"><div id="s3-price" class="card mini"><span class="icon">$</span><h2>Presupuesto</h2><p>Recibí el detalle de tu pedido antes de confirmar.</p></div><div id="s3-check" class="card mini"><span class="icon">✓</span><h2>Receta validada</h2><p>Confirmamos que esté vigente y en regla.</p></div></div><div class="footer">Atención profesional en cada etapa</div></div></section>
+      <section id="scene-4" class="clip" data-start="18" data-duration="6" data-track-index="1"><div class="backdrop"></div><div class="scene"><div><div class="step">Paso 4 de 5</div><h1 id="s4-title">Lo elaboramos<br /><strong>para vos.</strong></h1><p id="s4-lead" class="lead">Nuestros especialistas preparan tu fórmula en el laboratorio.</p></div><div id="s4-lab" class="lab"><span class="spark one"></span><div class="jar"><div class="jar-label">Preparado magistral</div></div><span class="spark two"></span></div><div class="footer">Elaboración farmacéutica personalizada</div></div></section>
+      <section id="scene-5" class="clip" data-start="24" data-duration="6" data-track-index="1"><div class="backdrop"></div><div class="scene"><div><div class="step">Paso 5 de 5</div><h1 id="s5-title">Ya podés<br /><strong>retirarlo.</strong></h1><p id="s5-lead" class="lead">Te confirmamos por WhatsApp cuando tu preparado está listo.</p></div><div><div id="s5-ready" class="ready"><div class="pickup-card"><div class="pickup-head"><span class="pickup-icon">✓</span><div><strong>Retiro en farmacia</strong><span>Castelar, Buenos Aires</span></div></div><div class="pickup-divider"></div><div class="pickup-status"><b>Preparado listo</b><em>✓ Confirmado</em></div></div></div><div id="s5-notification" class="card notification">Tu pedido queda reservado para que lo retires con tranquilidad.</div><div id="s5-cta" class="cta">● Consultá por WhatsApp</div></div><div class="footer">Farmacia Fiorilli JR · Atención personalizada</div></div></section>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const enter = (selector, at, y = 48) => tl.fromTo(selector, { opacity: 0, y }, { opacity: 1, y: 0, duration: 0.65, ease: "power3.out" }, at);
+      enter("#s1-title", 0.25); enter("#s1-lead", 0.85, 26); enter("#s1-chat", 1.55, 70);
+      enter("#s2-title", 6.25); enter("#s2-lead", 6.85, 26); enter("#s2-card", 7.55, 70);
+      enter("#s3-title", 12.25); enter("#s3-lead", 12.85, 26); enter("#s3-price", 13.55, 70); enter("#s3-check", 13.85, 70);
+      enter("#s4-title", 18.25); enter("#s4-lead", 18.85, 26); enter("#s4-lab", 19.55, 70);
+      enter("#s5-title", 24.25); enter("#s5-lead", 24.85, 26); enter("#s5-ready", 25.35, 70); enter("#s5-notification", 26.05, 46); enter("#s5-cta", 26.75, 46);
+      window.__timelines["pedido-whatsapp"] = tl;
+    </script>
+  </body>
+</html>
