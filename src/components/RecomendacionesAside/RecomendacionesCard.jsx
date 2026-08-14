@@ -1,6 +1,6 @@
 import "./RecomendacionesCard.css";
 export default function RecommendationCard({ alt, title, description, link }) {
-  const imagen = `/JPG/${title.trim().replace(/\s+/g, "")}/1.jpg`;
+  const imagen = `/JPG/${title.trim().replace(/\s+/g, "")}/1.webp`;
   return (
     <article className="recommendation-aside-card">
       <img src={imagen} alt={alt} className="recommendation-aside-card-image" />

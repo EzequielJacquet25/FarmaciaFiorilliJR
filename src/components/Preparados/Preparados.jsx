@@ -2,7 +2,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import CategoryFilter from "../CategoryFilter/CategoryFIlter";
 import ProductCard from "../ProductCard/ProductCard";
 import ProcessStepCard from "../ProcessStepCard/ProcessStepCard";
-import imgPreparados from "../../assets/imagen-faq.png";
+import imgPreparados from "../../assets/imagen-faq.webp";
 import Videos from "../Video/Videos";
 import "./Preparados.css";
 import { useEffect, useState } from "react";

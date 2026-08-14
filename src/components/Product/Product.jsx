@@ -41,7 +41,7 @@ export default function Product({ products }) {
   }, [nombreDecodificado, products]);
 
   const slug = producto ? crearSlugImagen(producto.nombre) : "";
-  const imagePath = `/JPG/${slug}/1.jpg`;
+  const imagePath = `/JPG/${slug}/1.webp`;
 
   useEffect(() => { if (producto) trackProductView(producto); }, [producto]);
 

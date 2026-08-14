@@ -1,5 +1,5 @@
 import "../Hero/Hero.css";
-import imgFAQ from "../../assets/imagen-faq.png";
+import imgFAQ from "../../assets/imagen-faq.webp";
 import FAQSection from "../FAQSection/FAQSection";
 import { useEffect } from "react";
 const Recomendaciones = () => {

@@ -1,12 +1,12 @@
 import Button from "../../components/Button/Button";
-import veterinarios from "../../assets/veterinarios.jpg";
-import pediatriocos from "../../assets/pediatricos.jpg";
-import dermatologicos from "../../assets/dermatologicos.jpg";
-import suplementos from "../../assets/suplementos.jpg";
-import menopausia from "../../assets/menopausia.jpg";
-import fertilidad from "../../assets/fertilidad.jpg";
+import veterinarios from "../../assets/veterinarios.webp";
+import pediatriocos from "../../assets/pediatricos.webp";
+import dermatologicos from "../../assets/dermatologicos.webp";
+import suplementos from "../../assets/suplementos.webp";
+import menopausia from "../../assets/menopausia.webp";
+import fertilidad from "../../assets/fertilidad.webp";
 
-import imgEspecialidades from "../../assets/especialidades.png";
+import imgEspecialidades from "../../assets/especialidades.webp";
 import "../Hero/Hero.css";
 import "./Especialidades.css";
 import { useEffect } from "react";

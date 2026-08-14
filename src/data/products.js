@@ -2,7 +2,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Agua Micelar",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Laurilpoliglucosido 5%, Crillet 4 3%,Propanotriol 3% agua conservada csp 100 ml",
     uso: "Aplicar una cantidad adecuada  del agua micelar sobre un disco de algodón y pásalo suavemente por todo el rostro para eliminar maquillaje, impurezas y exceso de grasa (no es necesario frotar). Evita el contacto directo con los ojos. Una vez aplicado se debe dejar  actuar unos minutos y luego   enjuagar con agua tibia. Se debe aplicar  sobre la piel limpia y seca, como primer paso de la rutina facial, por la mañana y/o por la noche",
@@ -19,7 +19,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Crema Antiage",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Ac Hialurónico 0.5 %, Retinol 0.3%, Vit.E 0.5 %  crema base   no iónica csp 50 g",
     uso: "Primero se debe limpiar y secar la piel del rostro previamente a la aplicación de la crema , se recomienda colocar una pequeña cantidad de crema sobre el rostro y el cuello realizando  movimientos   suaves en forma circular sobre la piel hasta que la crema se absorba por completo .Se recomienda  aplicar  especialmente en las zonas donde suelen aparecer signos de envejecimiento, como la frente, el contorno de ojos  y alrededor de los labios.",
@@ -36,7 +36,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Crema Nutritiva con vitamina A y E",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Vitamina A palmitato 500000 ui Vitamina E 0.05 % Alantoina 0.25% emulsión nutritiva base  csp 100 g ",
     uso: `Antes de aplicar la crema, la piel debe estar limpia y seca para ayudar a eliminar las impurezas de la misma. Luego se debe tomar una pequeña cantidad de la crema y aplicarla en el área , mediante el uso de  masajes suaves con movimientos circulares hasta que se absorba  completamente. `,
@@ -53,7 +53,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Crema para talones resecos",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ Urea 15% Lactato amonio 12 % , crema base no iónica csp 50 g",
     uso: "Antes de aplicar la crema se deben lavar los pies con agua tibia y jabón  , luego se deben secar cuidadosamente, especialmente entre los dedos y en la zona de los talones. Se recomienda aplicar una cantidad moderada de la crema en el área afectada realizando un suave masaje con movimientos circulares hasta que se absorba por completo. Para mejores resultados, es recomendable usarla por la noche, antes de acostarse.",
     recomendaciones: `Se recomienda aplicar   la crema 1 a 2 veces por día y no exceder cantidad de crema recomendada. Evitar aplicar sobre heridas abiertas, cortes o piel irritada. En caso de presentar irritación, enrojecimiento o ardor, suspender el uso y consultar a un profesional de la salud. No es recomendable excederse con la cantidad de crema ni la frecuencia de aplicación de la misma. Guardar el producto en un lugar fresco, seco y fuera del alcance de los niños. Preparado únicamente para uso externo. `,
@@ -69,7 +69,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Crema Tensora",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ DMAE 2.5% , VIT E 1% , VIT C  2% ;  Crema tensora csp 50 g ",
     uso: "Primero se debe limpiar y secar la piel del rostro previamente a la aplicación de la crema , se recomienda colocar una pequeña cantidad de crema sobre el rostro y el cuello realizando  movimientos   suaves en forma circular sobre la piel hasta que la crema se absorba por completo .Se recomienda aplicar especialmente en las zonas donde suelen aparecer signos de envejecimiento, como la frente, el contorno de ojos  y alrededor de los labios.",
     recomendaciones: `Evita el contacto directo con los ojos y otras mucosas, no aplicar la crema sobre zonas irritadas, con heridas o brotes activos  y no exceder la cantidad recomendada. Si observas enrojecimiento, ardor o irritación persistente, suspende su uso y consulta a un profesional de la salud. No es recomendable excederse con la cantidad de crema ni la frecuencia de aplicación de la misma. Preparado únicamente para uso externo `,
@@ -85,7 +85,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Emulsión Limpiadora",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ Betaína 8% Petrolato 10% Dimeticona 1 % ",
     uso: "Aplicar una cantidad adecuada en la  cara y cuello, dejar actuar 30 segundos  y luego para ayudar a eliminar el maquillaje , impurezas y exceso de grasa en el rostro , luego  enjuagar con abundante agua tibia y secar suavemente , para luego continuar con los otros pasos de la rutina skin care ",
     recomendaciones: `Evita el contacto directo con los ojos. No aplicar sobre piel irritada o lesionada.  Si aparece enrojecimiento, picazón o ardor, suspender su uso y consulte con un profesional. Conservar el producto en un lugar fresco, seco y alejado de la luz solar directa. Mantenlo fuera del alcance de los niños. Preparado únicamente para uso externo. `,
@@ -101,7 +101,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Emulsión Nutritiva",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       " Vitamina A palmitato 500000 ui Vitamina E 0.05 % Alantoina 0.25% emulsión nutritiva csp 300 ml",
     uso: "Limpia y seca tu piel antes de aplicar la crema. Aplica una cantidad adecuada de la emulsión nutritiva y masajea suavemente hasta su absorción , se recomienda utilizarla una o dos veces al día, según sea necesario. Aplicar 1 o 2 veces por día en la zona afectada indicada para piel seca, irritaciones, quemaduras, uso externo",
@@ -118,7 +118,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Serum de Ácido Hialurónico",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ Ac Hialurónico1.5 % serum csp 30 g",
     uso: "Limpia e hidrata tu piel antes de usar el serum usando productos como el agua micelar  .Es recomendable  aplicar 2-3 gotas de Serum en el área realizando movimientos suaves y circulares. Masajea ligeramente con las yemas de los dedos y deja que se absorba antes de aplicar otro  producto.",
     recomendaciones: `No es recomendable excederse con la cantidad de gel ni la frecuencia de aplicación de la misma. Evitar aplicar sobre heridas abiertas, cortes o piel irritada. En caso de presentar irritación, enrojecimiento o ardor, suspender el uso y consultar a un profesional de la salud. Guardar el producto en un lugar fresco, seco y fuera del alcance de los niños. Preparado únicamente para uso externo.`,
@@ -134,7 +134,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Serum Noche",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/Retinol 0,20 % ; Sérum c.s.p. 30 g",
     uso: "Utilizar únicamente por la noche. Limpiar el rostro con agua micelar o un limpiador suave y secar completamente la piel. Aplicar 2 o 3 gotas del sérum, evitando el contorno de los ojos, los labios y las mucosas. Distribuir mediante movimientos suaves y dejar absorber antes de aplicar una crema hidratante. Comenzar utilizándolo 2 o 3 noches por semana. Si la piel presenta buena tolerancia, aumentar gradualmente la frecuencia de aplicación según la tolerancia de la piel.",
     recomendaciones: `No combinar en la misma rutina con otros productos que contengan retinol u otros retinoides. No exceder la cantidad ni la frecuencia recomendadas y evitar su aplicación sobre heridas, quemaduras, cortes o piel irritada. Durante el día, se debe  utilizar protector solar.  Los resultados son progresivos y pueden comenzar a observarse después de 3 o 4 meses de uso constante. Si se presenta irritación intensa, enrojecimiento persistente o ardor, suspender el uso y consultar a un profesional de la salud. No utilizar durante el embarazo ni si se está planificando un embarazo; durante la lactancia, consultar previamente con un profesional. Conservar el producto bien cerrado, en un lugar fresco, seco y protegido de la luz y el calor. Mantener fuera del alcance de los niños. Preparado exclusivamente para uso externo`,
@@ -150,7 +150,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Serum con Vitamina C",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/Ácido L-ascórbico 10%Sérum c.s.p. 30 g",
     uso: "Puede utilizarse durante la rutina diurna o nocturna, aunque se recomienda preferentemente por la mañana debido a su acción antioxidante. Limpiar y secar la piel antes de la aplicación. Colocar 2 o 3 gotas sobre el rostro y distribuir mediante movimientos suaves y circulares, evitando el contacto con los ojos y las mucosas. Dejar que se absorba antes de aplicar una crema hidratante. Finalizar siempre la rutina diurna con protector solar.",
     recomendaciones: `No exceder la cantidad ni la frecuencia recomendadas. Evitar su aplicación sobre heridas, quemaduras, cortes o piel irritada. En pieles sensibles, comenzar utilizándolo en días alternos. Si también se utiliza el Sérum Noche con retinol, aplicar el sérum con vitamina C por la mañana y el retinol por la noche. En caso de irritación intensa, enrojecimiento persistente o ardor, suspender el uso y consultar a un profesional de la salud. La vitamina C complementa la protección antioxidante, pero no reemplaza el protector solar. Conservar el producto bien cerrado, en un lugar fresco, seco y protegido de la luz y el calor. No utilizar si adquiere una coloración naranja oscura o marrón. Mantener fuera del alcance de los niños. Preparado exclusivamente para uso externo.`,
@@ -166,7 +166,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Tónico Facial",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Hamamelis 5%,Aloe Vera 5%, Hibisco 5 %, Agua de rosas 10 % BRUMA FACIAL csp 100 ml",
     uso: "Para obtener los mejores resultados, comienza limpiando bien tu rostro usando el agua micelar  y seca suavemente con una toalla limpia. Luego, rociar  el tónico facial a una distancia de 15 a 20 cm, asegurando una distribución uniforme sobre todo el rostro. Deja que el producto se absorba por completo de forma natural, sin frotar ni enjuagar. Una vez absorbido, continua con tu rutina aplicando el Serum o tratamiento habitual. Utilizar el  tónico facial dos veces al día, por la mañana y por la noche, como parte de tu cuidado diario.",
@@ -184,7 +184,7 @@ export const products = [
   {
     categoria: "Skin Care",
     nombre: "Gel para contorno de ojos",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "RIGIN 3% ;Contorno de ojos  csp 15 g",
     uso: "Antes de aplicar el gel, asegúrate de limpiar y secar bien la piel del contorno de ojos. Coloca una pequeña cantidad del producto en la yema del dedo  y  aplica suavemente sobre el hueso orbital, realizando pequeños toques sin arrastrar ni frotar la piel. Extender el producto desde el lagrimal hacia la sien, siguiendo la línea natural donde suelen aparecer las arrugas de expresión. ",
     recomendaciones: `Evite aplicar sobre párpados móviles o zonas irritadas y dentro del ojo. Usar solo la cantidad recomendada, ya que el exceso puede causar molestias e irritación . Si aparece enrojecimiento, picazón o ardor, suspenda su uso y consulta a un profesional. Conservar el producto en un lugar fresco, seco y alejado de la luz solar directa. Mantenlo fuera del alcance de los niños. Preparado únicamente para uso externo. `,
@@ -201,7 +201,7 @@ export const products = [
   {
     categoria: "Medicamentos de uso tópico",
     nombre: "Spray Antimicótico",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ Clotrimazol 1.5 % exipientes  , spray csp 60 ml",
     uso: `Antes de aplicar el spray , se deben  lavar los pies con agua y jabón, asegurando una correcta higiene entre los dedos. Secar completamente la zona antes de aplicar el producto. Agitar el envase y pulverizar el spray a una distancia de 10 a 15 cm sobre el área afectada, permitiendo su completa absorción antes de colocarse el calzado. Se recomienda su uso preferentemente por la noche. `,
     recomendaciones: `No aplicar en áreas sensibles la piel (rostro , genitales etc) . Suspender el uso ante signos de irritación, enrojecimiento, ardor o picazón persistente, y consultar a un profesional de la salud. Conservar el producto bien cerrado, en un lugar fresco y seco, protegido de la luz y fuera del alcance de los niños.
@@ -218,7 +218,7 @@ Preparado únicamente para uso externo. `,
   {
     categoria: "Medicamentos de uso tópico",
     nombre: "Gel Antiinflamatorio",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/Diclofenac Dietilamina 2%, Arnica 5% Gel analgésico Antiinflamatorio csp 60 g",
     uso: `Aplique el gel sobre la piel limpia y seca, evitando heridas, cortes o infecciones. Use entre 0.5 y 4 gramos según el tamaño del área afectada y masajee suavemente hasta que se absorba realizando movimientos circulares. Repita 2-3 veces al día, respetando las indicaciones médicas y evite lavar o exponer al agua la piel tratada durante al menos una hora. `,
@@ -235,7 +235,7 @@ Preparado únicamente para uso externo. `,
   {
     categoria: "Medicamentos de uso tópico",
     nombre: "Crema Antimicótica",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ Miconazol 2% Gentamicina0.1% Betametsona 0.1% csp30 g",
     uso: `Aplicar 1 o 2 veces por día. Lave y seque la zona antes de usar. Aplique una capa delgada y extiéndala hasta que se absorba por completo ,aplique la crema una o dos veces al día.`,
     recomendaciones: `Conservar a temperatura inferior a 40°c alejado del alcance de niños . Evite el contacto con los ojos, mucosas  . No aplicar  en zonas sensibles de la piel  como el  (rostro, párpados , zonas íntimas etc. ) o bajo vendajes oclusivos. Suspenda el uso si presenta reacciones adversas  , como irritación , dolor , enrojecimiento . Preparado indicado únicamente para uso externo 
@@ -252,7 +252,7 @@ Preparado únicamente para uso externo. `,
   {
     categoria: "Medicamentos de uso tópico",
     nombre: "Spray Repelente de Insectos",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ dietiltoluamida 25% ; Ac Citronella 2.5 %; exp (glicerina,alcohol ) csp 100 ml",
     uso: `Antes de aplicar el repelente, la  piel debe estar  limpia y seca. Agita bien el envase y rocía el producto a una distancia adecuada (entre 10 y 15 cm) sobre las zonas expuestas del cuerpo. Evita aplicar directamente en el rostro: en su lugar, rocía un poco en tus manos y luego distribúyelo con cuidado, evitando el contacto con ojos, boca y mucosas.
@@ -272,7 +272,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Medicamentos de uso tópico",
     nombre: "Spray de Clorhexidina",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Clorhexidina 1% exp alcohol, agua purificada solución csp 60 ml",
     uso: `Limpia y seca la zona afectada. Aplica el spray a una distancia de 10-15 cm  cubriendo toda el área y deja actuar durante 1 minuto ,no es necesario enjuagar. Usa el spray máximo 2 veces al día y no más de 5 días seguidos, salvo indicación médica. 
@@ -291,7 +291,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Medicamentos de uso tópico",
     nombre: "Ungüento Antimicótico",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ BIFONAZOL 2%; Unguento para los hongos de las uñas csp 20 g",
     uso: `Lavar y secar bien las uñas afectadas con agua y jabón antes de aplicar el ungüento. Si la uña está muy engrosada, puedes limarla suavemente para facilitar la penetración de la pomada . Luego, aplica una capa fina del ungüento cubriendo toda la superficie de la uña afectada . `,
     recomendaciones: `Se recomienda aplicar la pomada antes de acostarse, para que actúe durante más tiempo sin ser removida por lavados o contacto con objetos. Finalmente, lava bien tus manos después de la aplicación para evitar la transmisión de la infección a otras áreas del cuerpo o a otras personas. Preparado indicado únicamente para uso externo 
@@ -308,7 +308,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Gotas Hepáticas",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ ext. fluido BOLDO 2%  ext fluido Zanahoria 1 % ;Tint  CARQUEJA 20% Tint   ALCACHOFA 40%  gotas csp 60 ml ( USO INTERNO)",
     uso: `Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
@@ -325,7 +325,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Gotas Antioxidantes",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Tintura de CARDO MARIANO csp para 60 ml ",
     uso: `Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
     recomendaciones: `La dosis habitual para adultos es 30-40 gotas administras 2 o 3 veces por día diluidas en medio vaso de  agua , no es recomendable el excederse con el número de tomas , ni la dosis indicada Se debe guardar en un lugar fresco, seco y fuera del alcance de los niños Preparado de uso interno.
@@ -342,7 +342,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Gotas Circulatorias",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "RP/ Tintura de Castaño de las Indias 25% , Tintura de Hamamelis 25% ; Tintura de centella Asiatica 25 %c ; Tintura de Ginko Biloba 25% csp para 60 ml ",
     uso: ` Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
@@ -361,7 +361,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Gotas Sedantes",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Tintura de Tilo 25% ; Tintura de Melisa 25% ;  Tintura de Pasiflora ; Titura de Valeriana 25% csp para 60 ml  ",
     uso: `Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
@@ -378,7 +378,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Gotas Inmunoestimulantes",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Tintura de  Echinacea 50% ; Tintura de uña de gato 50%c csp para 60 ml ",
     uso: `Antes de usar se deben agitar, este preparado de administrar de forma oral (colocar el número de gotas indicadas en el prospecto diluidas en medio vaso de agua)`,
@@ -396,7 +396,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Mix Antiacida",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/Manzanilla 40%; Congorosa 20% ;Echinasea 20% ;Menta Hojas 20% cps 25g",
     uso: `Tomar una cantidad de la mezcla herbal ( 1 cuchara de té) y agréguele agua hirviendo y dejar reposar por 10 /15 min , consumir 3 a 4 veces por día`,
@@ -413,7 +413,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Adelgazante",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Hisopo 15 % ,Fucus 20 % , sen 10  % ,cola de caballo 20 % , Apio 15 %   Cedrón 15 %  Anis 15 %    25 g ",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de té) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día`,
@@ -430,7 +430,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Antidiabética",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Pezuña de vaca 20%,Sarandi 20% Ortiga 20% Poleo csp 25 g",
     uso: `Se recomienda usar entre 1  a 2  gramos de hierba (una cucharada de té) por cada 100-200 ml de agua hirviendo dejar reposar por 10 min . Se recomienda tomar entre 1 a 3  tazas por día  . `,
     recomendaciones: `-`,
@@ -446,7 +446,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Antihipertensiva",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Olivo hojas 25%  Diente de León 10% Cola de Caballo 25%  Manzanilla 25 g",
     uso: `Se recomienda usar entre 1  a 2  gramos de hierba (una cucharada de té) por cada 100-200 ml de agua hirviendo dejar reposar por 10 min . Se recomienda tomar entre 1 a 3  tazas por día. `,
@@ -463,7 +463,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Antirreumática",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Fresno 10% , Sause c nacional 10%,Diente de Leon 10%,  Ortiga 10 % ,Jarilla hojas 10%",
     uso: `Tomar una cantidad de la tisana   ( 1 cuchara de té) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día.`,
@@ -480,7 +480,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Bronquial",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Pulmonaria 30 % ,Ambay 20 % ,Anacahuita 20 % ,Llanten csp 250 g",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de té) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día.`,
     recomendaciones: `-`,
@@ -496,7 +496,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Circulatoria",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Malva 30%, Hamamelis 10% ,Centella 20% Sanguinaria10%  ,Manzanilla csp 25 g   ",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de té) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día.`,
@@ -513,7 +513,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Digestiva",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Manzanilla 20%,Yerba de Pollo 20% ,Poleo Hojas 20 %, Menta Hojas 20%,Peperina Hojas csp 250 g",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de té) y agréguele agua hirviendo  y dejar reposar por  10 /15 min 1 taza después de las comidas principales.`,
@@ -530,7 +530,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Laxante",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Sen 20%, Zaragatona Rubia 20% Manzanilla 20% Diente de León csp 25 g",
     uso: `Tomar una cantidad de la  tisana   ( 1 cuchara de té) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día.`,
@@ -547,7 +547,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Productos de origen natural",
     nombre: "Tisana Sedante",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Pasionaria 20% ; Melisa 20% ; Tilo csp 25 g ",
     uso: `Tomar una cantidad de la mezcla herbal   ( 1 cuchara de té) y agréguele agua hirviendo  y dejar reposar por  10 /15 min , consumir 3 a 4 veces por día `,
     recomendaciones: `-`,
@@ -563,7 +563,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     {
     categoria: "Productos de origen natural",
     nombre: "Tisana Hepática",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Boldo 30%,Manzanilla 10% Diente de León 10% Carqueja 20% Poleo csp 25 g",
     uso: `Tomar una cantidad de la mezcla herbal ( 1 cuchara de tè) y agréguele agua hirviendo y dejar reposar por 10 /15 min , consumir 3 a 4 veces por día`,
     recomendaciones: `-`,
@@ -579,7 +579,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
       {
     categoria: "Productos de origen natural",
     nombre: "Tisana Diurética",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Composición Cola de caballo 20%Ortiga 20%Romero 10%Polero 10% Zarzaparrilla csp 25g",
     uso: `Tomar una cantidad de la mezcla herbal ( 1 cuchara de tè) y agréguele agua hirviendo y dejar reposar por 10 /15 min , consumir 3 a 4 veces por día`,
     recomendaciones: `-`,
@@ -595,7 +595,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Cápsulas de ashwagandha",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Rp/ Extracto seco de ashwagandha 300 mg  ; excipientes csp 50 capsulas ",
     uso: `La dosis indicada es de 1 o 2 cápsulas por día ,según la indicación médica. Para mejorar su absorción, se recomienda tomar las cápsulas antes  de acostarse para potenciar el efecto sedante  y la conciliación del sueño  , después de las comidas `,
@@ -612,7 +612,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Cápsulas Cúrcuma y Pimienta Negra",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Extracto seco de Curcuma 500 mg  y extracto seco de Pimienta 50 mg ; excipientes  csp 50 capsulas ",
     uso: `La dosis indicada es de 1 o 2 cápsulas por día ,según la indicación médica . Para mejorar su absorción, se recomienda tomar las cápsulas acompañadas de comidas que contengan grasas saludables (como aceite de oliva o palta). Estas capsulas se deben tomar durante 2 o  3 meses y luego se debe descansar por 1 mes y luego del descanso se puede repetir el tratamiento  `,
@@ -630,7 +630,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Cápsulas de Magnesio Quelado",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Bisglicinato de Magnesio + excipientes cps 500 mg ",
     uso: "La dosis indicada es de 1 o 2 cápsulas por día ,según la indicación médica . Estas capsulas se pueden tomar en cualquier momento del día según los requerimientos personales. ",
     recomendaciones: ` Las cápsulas deben guardarse en un lugar seco, fresco y alejado de la luz solar directa. La humedad y el calor pueden alterar la estructura de la cápsula o degradar el principio activo , se recomienda conservarlas entre 15 °C y 25 °C, a menos que el envase indique lo contrario.Mantener las cápsulas siempre en su envase original, bien cerrado, para evitar contaminación, exposición al aire o confusión con otros medicamentos.Es importante no tocar las cápsulas con las manos sucias o mojadas, ya que la humedad puede dañarlas. Deben mantenerse fuera del alcance de los niños: para evitar ingestas accidentales.`,
@@ -646,7 +646,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Cápsulas de Citrato de Magnesio",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ Citrato Magnesio anhidro ; excipientes  cps para  50 capsulas ",
     uso: `La dosis indicada es de 1 o 2 cápsulas por día ,según la indicación médica . Estas capsulas se pueden tomar en cualquier momento del día según los requerimientos personales.`,
     recomendaciones: `Las cápsulas deben guardarse en un lugar seco, fresco y alejado de la luz solar directa. La humedad y el calor pueden alterar la estructura de la cápsula o degradar el principio activo , se recomienda conservarlas entre 15 °C y 25 °C, a menos que el envase indique lo contrario. Mantener las cápsulas siempre en su envase original, bien cerrado, para evitar contaminación, exposición al aire o confusión con otros medicamentos. Es importante no tocar las cápsulas con las manos sucias o mojadas, ya que la humedad puede dañarlas. Deben mantenerse fuera del alcance de los niños: para evitar ingestas accidentales.`,
@@ -662,7 +662,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Cápsulas de Colágeno tipo II",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Colágeno tipo II 40 mg; Vitamina D3 6 mcg; Vitamina C 20 mg; Magnesio citrato 200 mg   csp para 50 capsulas ",
     uso: "La dosis indicada es de 1 o 2 cápsulas por día ,según la indicación médica .Estas capsulas se pueden tomar en cualquier momento del día según los requerimientos personales. ",
@@ -679,7 +679,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Cápsulas de Melena de león",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo:
       "Extracto seco de Melena de león 400 mg  ; excipientes  csp 50 capsulas ",
     uso: `La dosis indicada es de 1 o 2 cápsulas por día ,según la indicación médica . Para mejorar su absorción, se recomienda tomar las cápsulas antes o después de comidas que  las comidas para ayudar a facilitar su absorción .  `,
@@ -696,7 +696,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Cápsulas Vitamina C",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Vitamina C ; excipientes csp para 500 mg ",
     uso: "La dosis indicada es de 1 o 2 cápsulas por día ,según la indicación médica. Estas capsulas se pueden tomar en cualquier momento del día según los requerimientos personales. ",
     recomendaciones: `Las cápsulas deben guardarse en un lugar seco, fresco y alejado de la luz solar directa. La humedad y el calor pueden alterar la estructura de la cápsula o degradar el principio activo , se recomienda conservarlas entre 15 °C y 25 °C, a menos que el envase indique lo contrario. Mantener las cápsulas siempre en su envase original, bien cerrado, para evitar contaminación, exposición al aire o confusión con otros medicamentos. Es importante no tocar las cápsulas con las manos sucias o mojadas, ya que la humedad puede dañarlas. Deben mantenerse fuera del alcance de los niños: para evitar ingestas accidentales.`,
@@ -712,7 +712,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Cápsulas Anticaida del Pelo",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/ Zing gluconato 28 mg ; Cistina L 300 mg ; Biotina 2 mg ; Calcio Panteonato 25 mg; Vitamina B6  2 mg csp para 25 caps  ",
     uso: "La dosis indicada es de 1 cápsula por día, según la indicación médica. Estas capsulas se pueden tomar en cualquier momento del día según los requerimientos personales.",
     recomendaciones: `Las cápsulas deben guardarse en un lugar seco, fresco y alejado de la luz solar directa. La humedad y el calor pueden alterar la estructura de la cápsula o degradar el principio activo, se recomienda conservarlas entre 15 °C y 25 °C, a menos que el envase indique lo contrario. Mantener las cápsulas siempre en su envase original, bien cerrado, para evitar contaminación, exposición al aire o confusión con otros medicamentos. Es importante no tocar las cápsulas con las manos sucias o mojadas, ya que la humedad puede dañarlas. Deben mantenerse fuera del alcance de los niños: para evitar ingestas accidentales.`,
@@ -728,7 +728,7 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
   {
     categoria: "Suplementos",
     nombre: "Creatina en polvo",
-    img: ["1.jpg", "2.jpg", "3.jpg"],
+    img: ["1.webp", "2.jpg", "3.jpg"],
     compo: `Creatina monohidratada micronizada 100 % pura csp 100 g `,
     uso: `La creatina en polvo es un suplemento sensible a la humedad, al calor y a la luz, por lo que es importante guardarla en un ambiente alejado de fuentes de calor, como hornos o luz solar directa. La temperatura ambiente (15-25 °C) es ideal.`,
     recomendaciones: `Debe mantenerse el envase bien cerrado después de cada uso, ya que la humedad puede alterar la estructura del polvo y favorecer su degradación. No se deben  cucharas húmedas al manipularla .Es recomendable tomar la cantidad recomendada de creatina (3 a 5 gramos por día) , junto con una bebida dulce como jugo , para mejorar su absorción .`,

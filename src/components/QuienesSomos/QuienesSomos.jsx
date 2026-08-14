@@ -7,7 +7,7 @@ import FeatureCard from "../FeatureCard/FeatureCard";
 import TeamMemberCard from "../TeamMemberCard/TeamMemberCard";
 import "./QuienesSomos.css";
 import { useEffect, useState } from "react";
-import vacunacion from "../../assets/vacunacion.png";
+import vacunacion from "../../assets/vacunacion.webp";
 import Videos from "../Video/Videos";
 
 export default function QuienesSomos() {
