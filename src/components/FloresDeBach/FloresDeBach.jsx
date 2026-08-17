@@ -142,6 +142,53 @@ export default function FloresDeBach() {
         </div>
       </section>
 
+      <section className="bach-use-section">
+        <div className="bach-container bach-use-grid">
+          <article className="bach-use-card">
+            <span className="material-symbols-outlined" aria-hidden="true">
+              medication
+            </span>
+            <h2>Modo de uso</h2>
+            <p>
+              Administrar por vía oral, una vez al día, la cantidad de gotas
+              indicada en el rótulo. Pueden colocarse directamente en la boca,
+              sin apoyar ni tocar la punta del gotero con los labios, la lengua
+              o el interior de la boca.
+            </p>
+            <p>
+              También pueden diluirse en medio vaso de agua. En ese caso,
+              beber la preparación inmediatamente y no conservarla para una
+              toma posterior.
+            </p>
+          </article>
+
+          <article className="bach-use-card bach-use-card-highlight">
+            <span className="material-symbols-outlined" aria-hidden="true">
+              health_and_safety
+            </span>
+            <h2>Recomendaciones</h2>
+            <ul>
+              <li>No exceder la cantidad ni la frecuencia indicadas.</li>
+              <li>
+                El preparado contiene alcohol como conservante. Si necesitás
+                evitar su consumo, estás embarazada, amamantando, sos menor de
+                edad o tomás medicación incompatible, consultá antes con un
+                médico o farmacéutico.
+              </li>
+              <li>
+                Conservar el frasco bien cerrado, en un lugar fresco, seco y
+                protegido de la luz y el calor.
+              </li>
+              <li>
+                Ante síntomas emocionales intensos, persistentes o que
+                interfieran con tu vida cotidiana, consultá a un profesional de
+                la salud.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
       <section className="bach-selector-section" id="formulario-bach">
         <div className="bach-container">
           <div className="bach-selector-heading">
