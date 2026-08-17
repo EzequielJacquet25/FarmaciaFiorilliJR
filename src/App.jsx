@@ -2,21 +2,33 @@ import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
 import AnalyticsConsent from "./components/AnalyticsConsent/AnalyticsConsent";
-import { initializeAnalytics, trackPageView } from "./services/analyticsService";
+import {
+  initializeAnalytics,
+  trackPageView,
+} from "./services/analyticsService";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import BotonesChat from "./components/BotonesChat/BotonesChat";
 import { products } from "./data/products";
 
 const Home = lazy(() => import("./components/Home/Home"));
-const QuienesSomos = lazy(() => import("./components/QuienesSomos/QuienesSomos"));
+const QuienesSomos = lazy(
+  () => import("./components/QuienesSomos/QuienesSomos"),
+);
 const Preparados = lazy(() => import("./components/Preparados/Preparados"));
 const Product = lazy(() => import("./components/Product/Product"));
 const NotFound = lazy(() => import("./components/NotFound/NotFound"));
-const Recomendaciones = lazy(() => import("./components/Recomendaciones/Recomendaciones"));
-const Especialidades = lazy(() => import("./components/Especialidades/Especialidades"));
+const Recomendaciones = lazy(
+  () => import("./components/Recomendaciones/Recomendaciones"),
+);
+const Especialidades = lazy(
+  () => import("./components/Especialidades/Especialidades"),
+);
 const PedidoDePreparado = lazy(
   () => import("./components/PedidoDePreparado/PedidoDePreparado"),
+);
+const FloresDeBach = lazy(
+  () => import("./components/FloresDeBach/FloresDeBach"),
 );
 
 function App() {
@@ -26,9 +38,13 @@ function App() {
       behavior: "smooth",
     });
   }, []);
-  useEffect(() => { initializeAnalytics(); }, []);
+  useEffect(() => {
+    initializeAnalytics();
+  }, []);
   const location = useLocation();
-  useEffect(() => { trackPageView(location.pathname); }, [location.pathname]);
+  useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location.pathname]);
   return (
     <div className="app-shell">
       <Header></Header>
@@ -43,9 +59,13 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/quienesSomos" element={<QuienesSomos />} />
-          <Route path="/preparados" element={<Preparados products={products} />} />
+          <Route
+            path="/preparados"
+            element={<Preparados products={products} />}
+          />
           <Route path="/especialidades" element={<Especialidades />} />
           <Route path="/pedido-de-preparado" element={<PedidoDePreparado />} />
+          <Route path="/flores-de-bach" element={<FloresDeBach />} />
           <Route path="/item/:name" element={<Product products={products} />} />
           <Route path="/FAQ" element={<Recomendaciones />} />
         </Routes>

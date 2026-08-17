@@ -8,6 +8,7 @@ export default function ProductCard({
   title,
   principles = [],
   receta,
+  path,
 }) {
   const navigate = useNavigate();
   return (
@@ -47,7 +48,13 @@ export default function ProductCard({
         ) : (
           <span className="product-card-details">Venta Libre</span>
         )}
-        <Button variant="primary" onClick={() => { trackProductClick({ nombre: title, categoria: category }); navigate(`/item/${title}`); }}>
+        <Button
+          variant="primary"
+          onClick={() => {
+            trackProductClick({ nombre: title, categoria: category });
+            navigate(path || `/item/${title}`);
+          }}
+        >
           Ver Detalles
         </Button>
       </div>

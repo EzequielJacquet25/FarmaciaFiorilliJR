@@ -111,7 +111,10 @@ export default function Preparados({ products }) {
             <div>
               <h3 className="preparados-sidebar-title">Categorías</h3>
 
-              <div className="preparados-category-list" aria-label="Filtrar preparados por categoría">
+              <div
+                className="preparados-category-list"
+                aria-label="Filtrar preparados por categoría"
+              >
                 {categories.map((category) => (
                   <CategoryFilter
                     key={category}
@@ -122,7 +125,6 @@ export default function Preparados({ products }) {
                 ))}
               </div>
             </div>
-
           </aside>
           {filteredProducts.length > 0 ? (
             <div className="preparados-products">
@@ -138,6 +140,7 @@ export default function Preparados({ products }) {
                     title={product.nombre}
                     principles={product.beneficios}
                     receta={product.receta}
+                    path={product.path}
                   />
                 ))}
               </div>

@@ -1,5 +1,22 @@
 export const products = [
   {
+    categoria: "Productos de origen natural",
+    nombre: "Flores de Bach",
+    img: ["1.jpg"],
+    compo: "Preparado personalizado a base de esencias florales de Bach.",
+    uso: "Administrar por vía oral una vez al día, en la cantidad de gotas indicada en el rótulo. Puede colocarse directamente en la boca o diluirse en medio vaso de agua.",
+    recomendaciones:
+      "No exceder la cantidad ni la frecuencia indicadas. Este preparado contiene alcohol como conservante. Ante síntomas emocionales intensos, persistentes o que interfieran con las actividades cotidianas, consultar a un profesional de la salud.",
+    beneficios: [
+      "Preparado personalizado según la consulta.",
+      "Acompañamiento para el bienestar y equilibrio emocional.",
+      "Selección entre 38 esencias florales.",
+    ],
+    receta: false,
+    video: true,
+    path: "/flores-de-bach",
+  },
+  {
     categoria: "Skin Care",
     nombre: "Agua Micelar",
     img: ["1.webp", "2.jpg", "3.jpg"],
@@ -136,8 +153,8 @@ export const products = [
     nombre: "Serum Noche",
     img: ["1.webp", "2.jpg", "3.jpg"],
     compo: "Rp/Retinol 0,20 % ; Sérum c.s.p. 30 g",
-    uso: "Utilizar únicamente por la noche. Limpiar el rostro con agua micelar o un limpiador suave y secar completamente la piel. Aplicar 2 o 3 gotas del sérum, evitando el contorno de los ojos, los labios y las mucosas. Distribuir mediante movimientos suaves y dejar absorber antes de aplicar una crema hidratante. Comenzar utilizándolo 2 o 3 noches por semana. Si la piel presenta buena tolerancia, aumentar gradualmente la frecuencia de aplicación según la tolerancia de la piel.",
-    recomendaciones: `No combinar en la misma rutina con otros productos que contengan retinol u otros retinoides. No exceder la cantidad ni la frecuencia recomendadas y evitar su aplicación sobre heridas, quemaduras, cortes o piel irritada. Durante el día, se debe  utilizar protector solar.  Los resultados son progresivos y pueden comenzar a observarse después de 3 o 4 meses de uso constante. Si se presenta irritación intensa, enrojecimiento persistente o ardor, suspender el uso y consultar a un profesional de la salud. No utilizar durante el embarazo ni si se está planificando un embarazo; durante la lactancia, consultar previamente con un profesional. Conservar el producto bien cerrado, en un lugar fresco, seco y protegido de la luz y el calor. Mantener fuera del alcance de los niños. Preparado exclusivamente para uso externo`,
+    uso: "Utilizar únicamente por la noche. Limpiar el rostro con agua micelar o un limpiador suave y secar completamente la piel. Aplicar 2 o 3 gotas del sérum, evitando el contorno de los ojos, los labios y las mucosas. Distribuir mediante movimientos suaves y dejar absorber antes de aplicar una crema hidratante. Comenzar utilizándolo 2 o 3 noches por semana. Si la piel presenta buena tolerancia, aumentar gradualmente la frecuencia de aplicación según la tolerancia de la piel.",
+    recomendaciones: `No combinar en la misma rutina con otros productos que contengan retinol u otros retinoides. No exceder la cantidad ni la frecuencia recomendadas y evitar su aplicación sobre heridas, quemaduras, cortes o piel irritada. Durante el día, se debe utilizar protector solar. Los resultados son progresivos y pueden comenzar a observarse después de 3 o 4 meses de uso constante. Si se presenta irritación intensa, enrojecimiento persistente o ardor, suspender el uso y consultar a un profesional de la salud. No utilizar durante el embarazo ni si se está planificando un embarazo; durante la lactancia, consultar previamente con un profesional. Conservar el producto bien cerrado, en un lugar fresco, seco y protegido de la luz y el calor. Mantener fuera del alcance de los niños. Preparado exclusivamente para uso externo`,
     beneficios: [
       "Antiedad: Estimula la renovación celular y la producción de colágeno, mejorando líneas finas, firmeza y elasticidad.",
       "Acné y poros: Ayuda a regular la oleosidad, destapar los poros y prevenir nuevas imperfecciones.",
@@ -560,11 +577,12 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     receta: false,
     video: false,
   },
-    {
+  {
     categoria: "Productos de origen natural",
     nombre: "Tisana Hepática",
     img: ["1.webp", "2.jpg", "3.jpg"],
-    compo: "Boldo 30%,Manzanilla 10% Diente de León 10% Carqueja 20% Poleo csp 25 g",
+    compo:
+      "Boldo 30%,Manzanilla 10% Diente de León 10% Carqueja 20% Poleo csp 25 g",
     uso: `Tomar una cantidad de la mezcla herbal ( 1 cuchara de tè) y agréguele agua hirviendo y dejar reposar por 10 /15 min , consumir 3 a 4 veces por día`,
     recomendaciones: `-`,
     beneficios: [
@@ -576,11 +594,12 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     receta: false,
     video: false,
   },
-      {
+  {
     categoria: "Productos de origen natural",
     nombre: "Tisana Diurética",
     img: ["1.webp", "2.jpg", "3.jpg"],
-    compo: "Composición Cola de caballo 20%Ortiga 20%Romero 10%Polero 10% Zarzaparrilla csp 25g",
+    compo:
+      "Composición Cola de caballo 20%Ortiga 20%Romero 10%Polero 10% Zarzaparrilla csp 25g",
     uso: `Tomar una cantidad de la mezcla herbal ( 1 cuchara de tè) y agréguele agua hirviendo y dejar reposar por 10 /15 min , consumir 3 a 4 veces por día`,
     recomendaciones: `-`,
     beneficios: [
@@ -713,7 +732,8 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     categoria: "Suplementos",
     nombre: "Cápsulas Anticaida del Pelo",
     img: ["1.webp", "2.jpg", "3.jpg"],
-    compo: "Rp/ Zing gluconato 28 mg ; Cistina L 300 mg ; Biotina 2 mg ; Calcio Panteonato 25 mg; Vitamina B6  2 mg csp para 25 caps  ",
+    compo:
+      "Rp/ Zing gluconato 28 mg ; Cistina L 300 mg ; Biotina 2 mg ; Calcio Panteonato 25 mg; Vitamina B6  2 mg csp para 25 caps  ",
     uso: "La dosis indicada es de 1 cápsula por día, según la indicación médica. Estas capsulas se pueden tomar en cualquier momento del día según los requerimientos personales.",
     recomendaciones: `Las cápsulas deben guardarse en un lugar seco, fresco y alejado de la luz solar directa. La humedad y el calor pueden alterar la estructura de la cápsula o degradar el principio activo, se recomienda conservarlas entre 15 °C y 25 °C, a menos que el envase indique lo contrario. Mantener las cápsulas siempre en su envase original, bien cerrado, para evitar contaminación, exposición al aire o confusión con otros medicamentos. Es importante no tocar las cápsulas con las manos sucias o mojadas, ya que la humedad puede dañarlas. Deben mantenerse fuera del alcance de los niños: para evitar ingestas accidentales.`,
     beneficios: [
@@ -741,5 +761,4 @@ No uses una cantidad excesiva; una capa ligera es suficiente para que el product
     receta: false,
     video: true,
   },
-]
-
+];
